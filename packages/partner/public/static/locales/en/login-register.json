@@ -1,0 +1,77 @@
+{
+  "login": {
+    "header": "Rev Payment",
+    "title": "USER LOGIN",
+    "button": {
+      "login": "Login"
+    },
+    "label": {
+      "remember_me": "Remember Me",
+      "forgot_password": "Forgot password?",
+      "copyright": "2019 RevPayment",
+      "privacy_policy": "Privacy Policy",
+      "contact": "Contact",
+      "sign_up": "Don't have an account? Sign Up"
+    },
+    "placeholder": {
+      "username": "Username",
+      "password": "Password"
+    }
+  },
+  "register": {
+    "title": {
+      "sign_up": "SIGN UP",
+      "account_info": "ACCOUNT INFO",
+      "partner_info": "PARTNER INFO"
+    },
+    "placeholder": {
+      "username": "User Name",
+      "password": "Password",
+      "email": "Email",
+      "mcc_code": "e.g: +1",
+      "phone_number": "Phone Number",
+      "firstname": "First Name",
+      "lastname": "Last Name",
+      "id_passport": "ID No. / Passport No.",
+      "partner_id": "Partner ID",
+      "partner_name": "Partner Name",
+      "partner_phone": "Partner Phone",
+      "partner_email": "Partner Email",
+      "partner_address": "Partner Address"
+    },
+    "button": {
+      "register": "Register"
+    },
+    "label": {
+      "label_normal": {
+        "terms": "By clicking 'Register' I agree the",
+        "already_account": "Already have an account?"
+      },
+      "label_link": {
+        "login": "Login",
+        "terms": "Terms Of Service"
+      },
+      "username": "User Name",
+      "password": "Password",
+      "email": "Email",
+      "mcc_code": "Mcc code",
+      "phone_number": "Phone Number",
+      "firstname": "First Name",
+      "lastname": "Last Name",
+      "id_passport": "ID No. / Passport No.",
+      "partner_id": "Partner ID",
+      "partner_name": "Partner Name",
+      "partner_phone": "Partner Phone",
+      "partner_email": "Partner Email",
+      "partner_address": "Partner Address"
+    }
+  },
+  "register_success": {
+    "title": "Reservation submitted!",
+    "label": {
+      "waitting_approval": "Please waitting for approval to be able to use",
+      "back_to_home": "Back to home page",
+      "click_here": "click here"
+    }
+  }
+}

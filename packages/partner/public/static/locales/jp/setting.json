@@ -1,0 +1,28 @@
+{
+  "partner_setting": {
+    "title": "パートナー設定",
+    "label": {
+      "callback_url": "コールバックURL",
+      "partner_name": "パートナー名",
+      "partner_desc": "パートナー説明",
+      "limit_transfer": "1日の転送限度額",
+      "service_status": "サービスステータス"
+    },
+    "button": {
+      "save": "保存する"
+    }
+  },
+  "account_setting": {
+    "title": "アカウント設定",
+    "label": {
+      "language": "言語"
+    },
+    "button": {
+      "save": "保存"
+    },
+    "message": {
+      "save_success": "保存が成功しました"
+    }
+  },
+  "permissions": {}
+}

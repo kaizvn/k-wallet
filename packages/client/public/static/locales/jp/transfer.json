@@ -1,0 +1,26 @@
+{
+  "title": "Wallet Payment-jp",
+  "label": {
+    "currency": "Currency-jp",
+    "amount": "Amount-jp",
+    "paying_for_goods": "Payings for goods and services-jp",
+    "covered_by_our": "The seller pays the fee, and your eligible purchages are covered by our-jp",
+    "buyer_protection": "Buyer Protection-jp",
+    "available_amount": "Available Amount-jp",
+    "send_to": "You are going to send to-jp",
+    "transfer_comfirmation": "Transfer Confirmation-jp"
+  },
+  "placeholder": {
+    "amount": "Amount-jp"
+  },
+  "button": {
+    "send": "Send-jp",
+    "back_to_dashboard": "Back to your dashboard-jp"
+  },
+  "message": {
+    "account_not_available": "Your account is not available, please logged in or contact admin.-jp",
+    "go_to_dashboard": "Go to dashboard-jp",
+    "balance_insufficient": "Your balance is insufficient-jp",
+    "do_not_have_wallet": "You don’t have any wallet-jp"
+  }
+}

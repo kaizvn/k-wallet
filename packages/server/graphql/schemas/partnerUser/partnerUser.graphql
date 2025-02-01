@@ -1,0 +1,85 @@
+type PartnerUser {
+  id: ID!
+  username: String!
+  title: String!
+  fullName: String!
+  firstName: String!
+  lastName: String!
+  birthDate: String!
+  birthDay: Int!
+  birthMonth: Int!
+  birthYear: Int!
+  age: Int!
+  gender: Gender!
+  email: String!
+  phone: String!
+  identity: String!
+  mccCode: String!
+  token: String!
+  status: UserStatus!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  role: PartnerUserRole!
+  partner: Partner!
+  setting: UserSetting!
+}
+
+type Query {
+  get_quick_filter_partner_members(
+    filter: FilterTable!
+  ): FilterPartnerUserResult!
+  get_partner_members(partnerId: ID): [PartnerUser!]!
+  get_partner_member(id: ID!): PartnerUser!
+  login_partner_user(username: String!, password: String!): PartnerUser!
+}
+
+type Mutation {
+  invite_member(email: String): PartnerUser!
+  register_partner_user(
+    id: ID
+    username: String!
+    password: String!
+    title: String!
+    firstName: String!
+    lastName: String!
+    birthDateString: String!
+    email: String!
+    phone: String!
+    identity: String!
+    mccCode: String!
+    partnerId: ID
+    partnerName: String!
+    partnerPhone: String
+    partnerEmail: String
+    partnerAddress: String
+  ): PartnerUser!
+
+  register_partner_member(
+    id: ID
+    username: String!
+    password: String!
+    title: String!
+    firstName: String!
+    lastName: String!
+    partnerId: ID!
+    birthDateString: String!
+    email: String!
+    phone: String!
+    identity: String!
+    mccCode: String!
+  ): PartnerUser!
+
+  update_member_status(id: ID!, action: UpdateStatusAction!): PartnerUser!
+
+  cancel_member_invitation(id: ID!): PartnerUser!
+
+  change_partner_password(
+    currentPassword: String!
+    newPassword: String!
+  ): PartnerUser!
+}
+
+enum PartnerUserRole {
+  OWNER
+  MEMBER
+}

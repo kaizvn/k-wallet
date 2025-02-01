@@ -1,0 +1,131 @@
+body > div#__next,
+#__next,
+#__next > div {
+  height: 100%;
+}
+
+.body-login-page {
+  padding-bottom: 12px;
+}
+
+.sc-hidden {
+  visibility: hidden;
+}
+
+.sc-navbar {
+  color: #fff;
+}
+.sc-text-wordwrap {
+  word-wrap: break-word;
+  max-width: 120px;
+}
+.form-group-btn-register {
+  flex: 1;
+  margin-left: 4px;
+}
+
+.form-group-btn-login {
+  flex: 2;
+}
+
+.flex-container-btn-loginpage {
+  display: flex;
+}
+
+.form-group-username,
+.form-group-password {
+  flex: 3;
+}
+
+.ks-page .ks-page-content .ks-panel.sc-register {
+  width: 600px;
+}
+
+.form-group-btn-register {
+  flex: 1;
+  margin-left: 4px;
+}
+
+.form-group-btn-login {
+  flex: 2;
+}
+
+.flex-container-btn-loginpage {
+  display: flex;
+}
+
+.form-group-username,
+.form-group-password {
+  flex: 3;
+}
+
+#index-header {
+  border-right: 1px solid rgba(57, 80, 155, 0.1);
+}
+.card-add-new-wallet,
+.wallet-table,
+.relative-wallet-form {
+  position: relative;
+}
+.card-add-new-wallet {
+  width: 50%;
+  top: -500px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: solid 1px #dee0e1;
+  left: 25%;
+}
+.wallet-table {
+  top: -250px;
+}
+.card-add-new-wallet,
+.wallet-table {
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+}
+
+.wallet-table.ks-open,
+.card-add-new-wallet.ks-open {
+  top: 0;
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+}
+.add-new-wallet {
+  position: absolute;
+  left: 30%;
+}
+h3.title-add-new-wallet {
+  color: #466bde;
+}
+.wrapper {
+  position: relative;
+  padding: 0px !important;
+}
+
+.wrapper-inner {
+  position: absolute;
+  font-size: 18px;
+  width: 100%;
+  transform: translate(0%, 0%);
+  /* top: 50%; */
+  min-height: 80vh;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.ks-theme-royal-blue .card-text {
+  font-size: 16px;
+}
+
+.wallet-shadow {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
+}
+
+.shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.disabled-button > a > .primary-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}

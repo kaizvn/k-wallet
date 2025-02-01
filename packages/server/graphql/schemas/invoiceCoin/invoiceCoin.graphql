@@ -1,0 +1,11 @@
+type InvoiceCoin {
+  id: ID!
+  coin: Coin!
+  depositAddress: String
+  subTotal: Float!
+  marginPercentage: Float!
+  totalAmount: Float!
+  invoice: Invoice
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

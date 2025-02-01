@@ -1,0 +1,17 @@
+{
+  "billing": {
+    "details": {
+      "title": "支払明細",
+      "button": {
+        "view_transaction_details": "取引詳細を見る"
+      }
+    }
+  },
+  "deposit": {},
+  "ewallets": {},
+  "history": {},
+  "payment": {},
+  "transaction": {},
+  "transfer": {},
+  "withdrawal": {}
+}

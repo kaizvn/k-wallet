@@ -1,0 +1,56 @@
+{
+  "manage": {},
+  "update_success": "Update coin successfull",
+  "update_coin": "Update Coin",
+  "button": {
+    "disable_coin": "Disable",
+    "enable_coin": "Enable",
+    "edit": "Edit",
+    "update": "Update"
+  },
+  "add_new": {
+    "add_button": "Add",
+    "reset_button": "Reset",
+    "add_success_message": "Add new coin successfully",
+    "title": "Add New Coin",
+    "id": "Id",
+    "id_placeholder": "Id",
+    "name": "Name",
+    "name_placeholder": "Name",
+    "symbol": "Symbol",
+    "symbol_placeholder": "Symbol",
+    "logo": "Logo",
+    "minimum_withdrawal": "Minimum Withdrawal",
+    "minimum_deposit": "Minimum Deposit",
+    "compound_support": "Support Compound",
+    "decimals": "Decimals",
+    "network": "Network Type",
+    "support_PF": "Support Payment Forward",
+    "margin_percentage": "Margin Percentage",
+    "percentage": "Percentage for fee",
+    "fee_fixed": "Fixed of fee",
+    "contract_address": "Contract Address"
+  },
+  "detail": {
+    "coin_details": {
+      "title": "Coin Details",
+      "label": {
+        "id": "Id",
+        "name": "Name",
+        "symbol": "Symbol",
+        "logo": "Logo",
+        "date_create": "Date Create",
+        "decimals": "Decimals",
+        "network": "Network Type",
+        "support_PF": "Support Payment Forward",
+        "minimum_withdrawal": "Minimum Withdrawal",
+        "minimum_deposit": "Minimum Deposit",
+        "compound_support": "Support Compound",
+        "percentage": "Percentage for fee",
+        "fee_fixed": "Fixed of fee",
+        "status": "Status",
+        "contract_address": "Contract Address"
+      }
+    }
+  }
+}

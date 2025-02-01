@@ -1,0 +1,48 @@
+{
+  "manage": {},
+  "add_new": {
+    "add_button": "追加する",
+    "reset_button": "リセット",
+    "add_success_message": "新規ユーザーを正常に追加しました",
+    "title": "新規ユーザーを追加する",
+    "username": "ユーザーネーム",
+    "username_placeholder": "ユーザーネーム",
+    "password": "パスワード",
+    "password_placeholder": "パスワード",
+    "email": "Eメール",
+    "email_placeholder": "Eメール",
+    "address": "アドレス",
+    "address_placeholder": "アドレス",
+    "mcc_code": "Mccコード",
+    "mcc_code_placeholder": "e.g: +1",
+    "phone": "電話番号",
+    "phone_placeholder": "電話番号",
+    "zip_code": "Zipコード",
+    "zip_code_placeholder": "Zipコード",
+    "identity": "国籍",
+    "identity_placeholder": "国籍",
+    "select_title": "タイトルを選択",
+    "first_name": "名",
+    "first_name_placeholder": "名",
+    "last_name": "氏",
+    "last_name_placeholder": "氏",
+    "birth_date": "生年月日",
+    "select_country": "国を選択"
+  },
+  "detail": {
+    "user_details": {
+      "title": "ユーザー詳細",
+      "label": {
+        "username": "ユーザーネーム",
+        "fullname": "氏名",
+        "gender": "性別",
+        "identity": "国籍",
+        "email": "Eメール",
+        "join_date": "参加日",
+        "birth_date": "生年月日",
+        "age": "年齢",
+        "status": "ステータス"
+      }
+    }
+  }
+}

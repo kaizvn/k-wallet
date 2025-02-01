@@ -1,0 +1,50 @@
+{
+  "title": "Withdrawal",
+  "instruction": {
+    "title": "Important Withdrawal Instruction",
+    "text": {},
+    "detail": {
+      "time": {
+        "title": "Reflection time",
+        "content": "within 24 hours"
+      },
+      "limit": {
+        "title": "Maximum remittance amount",
+        "content": {
+          "unit_character": "*",
+          "day": "day",
+          "unit_text": "BTC, ETH, etc.."
+        }
+      },
+      "fee": {
+        "title": "Fees",
+        "content": "Free"
+      }
+    }
+  },
+  "amount": {
+    "title": "Withdrawal Amount",
+    "label": {
+      "available": "Available",
+      "remittance_amount": "Remittance Amount"
+    }
+  },
+  "recipient": {
+    "title": "Recipient's Wallet Address",
+    "content": "Please verify the wallet address. We cannot refund an incorrect withdrawal !!"
+  },
+  "label": {
+    "tracking_id": "Tracking Id",
+    "deposit_address": {
+      "label_normal": "Address",
+      "label_bold": "Deposit"
+    },
+    "payment_completed": "Payment Completed !"
+  },
+  "button": {
+    "back": "Back",
+    "withdraw": "Withdraw",
+    "cancel": "Cancel",
+    "confirm": "Are you sure?"
+  }
+}

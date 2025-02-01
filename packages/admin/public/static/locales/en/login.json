@@ -1,0 +1,18 @@
+{
+  "header": "Rev Payment",
+  "title": "USER LOGIN",
+  "button": {
+    "login": "Login"
+  },
+  "label": {
+    "remember_me": "Remember Me",
+    "forgot_password": "Forgot your password?",
+    "copyright": "2020 RevPayment",
+    "privacy_policy": "Privacy Policy",
+    "contact": "Contact"
+  },
+  "placeholder": {
+    "username": "Username",
+    "password": "Password"
+  }
+}

@@ -1,0 +1,7 @@
+/node_modules/
+/.idea/
+.babelrc
+.next/
+src
+.gitignore
+webpack.config.js

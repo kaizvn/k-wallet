@@ -1,0 +1,21 @@
+type InvoiceClient {
+  id: ID!
+  name: String!
+  email: String!
+  owner: Partner!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Mutation {
+  create_new_invoice_client(name: String!, email: String!): InvoiceClient!
+  update_invoice_client(id: ID!, name: String!, email: String!): InvoiceClient!
+}
+
+type Query {
+  get_quick_filter_invoices_client_by_owner_id(
+    filter: FilterTable!
+  ): FilterInvoiceClientResult!
+  get_invoices_client_by_owner_id: [InvoiceClient!]!
+  get_invoice_client(id: ID!): InvoiceClient!
+}

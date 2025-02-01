@@ -1,0 +1,77 @@
+type EWallet {
+  id: ID!
+  name: String
+  owner: EWalletOwner!
+  coin: Coin!
+  type: WalletType!
+  balance: Float!
+  lockedBalance: Float
+  extraAmount: Float
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  receivingAddress: String
+  isSynchronizing: Boolean
+}
+
+input OptionGetAddress {
+  before: Int
+  after: Int
+  limit: Int
+}
+
+type PrivateInfo {
+  address: String!
+  walletKey: String!
+}
+
+type Query {
+  get_user_ewallet(id: ID!): EWallet!
+  get_user_ewallets(id: ID): [EWallet!]!
+  get_all_user_ewallets: [EWallet!]!
+  get_my_ewallets: [EWallet!]!
+  get_partner_ewallets(partnerId: ID): [EWallet!]!
+  get_quick_filter_ewallets_by_coin_id(
+    coinId: ID
+    filter: FilterTable!
+  ): FilterWalletResults!
+  get_private_info_ewallet(address: String!): PrivateInfo
+  get_virtual_wallets: [EWallet!]
+}
+
+type Mutation {
+  get_deposit_address(trackingId: String, coinId: String!): DepositAddressResp!
+  create_user_ewallet(name: String, coinId: ID!, userId: String): EWallet!
+  create_partner_ewallet(name: String, coinId: ID!, partnerId: String): EWallet!
+  update_user_ewallet(
+    id: ID!
+    name: String
+    walletAddresses: [String!]
+  ): EWallet!
+  update_partner_ewallet(
+    id: ID
+    name: String
+    walletAddresses: [String!]
+  ): EWallet!
+  sync_ewallet_with_network(
+    arrayId: [String!]
+    options: OptionGetAddress
+  ): [EWallet!]
+}
+
+enum WalletType {
+  WALLET_USER
+  WALLET_PARTNER
+  WALLET_OUTSIDER
+}
+
+type DepositAddressResp {
+  address: String!
+  trackingId: String
+  coin: Coin!
+}
+
+union EWalletOwner = Partner | User | OutsiderWallet
+
+type OutsiderWallet {
+  address: String!
+}

@@ -1,0 +1,273 @@
+{
+  "required_field": "Required field.",
+  "invalid_email": "Invalid email address",
+  "not_expired_yet": "Not Expired Yet !",
+  "save_success": "Save successfully",
+  "actions_button": {
+    "ban": "Ban",
+    "unban": "Unban",
+    "approve": "Approve",
+    "reject": "Reject"
+  },
+  "profile": {
+    "title": {
+      "username": "Username",
+      "fullname": "Full Name",
+      "email": "Email",
+      "your_profile": "Your Profile"
+    },
+    "button": {
+      "edit": "Edit",
+      "change_password": "Change password"
+    }
+  },
+  "edit_profile": {
+    "title": "Edit Admin Profile",
+    "label": {
+      "admin_name": "Your Name",
+      "email": "Email"
+    },
+    "button": {
+      "save": "Save",
+      "reset": "Reset"
+    }
+  },
+  "change_password": {
+    "button": {
+      "change_password": "Change Your Password"
+    },
+    "title": "Change your password",
+    "label": {
+      "current_password": "Current password",
+      "new_password": "New password",
+      "re_new_password": "Re-type new password"
+    }
+  },
+  "forgot_password": {
+    "title": "Reset your password",
+    "label": {
+      "input_email": "Input your email"
+    },
+    "button": {
+      "get_email_confirm": "Get email confirm"
+    },
+    "message": {
+      "check_your_email": "Check your email for password reset link."
+    }
+  },
+  "ewallet": {
+    "sync_wallet": "Sync wallet balance",
+    "sync_multiple": "Sync Multiple Wallets Balance",
+    "refresh_deposit_adr": "Clear Deposit Address",
+    "renew_deposit_adr": {
+      "username": "Username",
+      "coin_id": "Coin Id",
+      "tracking_id": "Tracking Id",
+      "title": "Clear Deposit Address",
+      "submit": "Submit",
+      "reset": "Reset",
+      "tooltip_sync": "Sync wallet balance",
+      "empty_deposit": "Empty Deposit Address",
+      "warning": "Warning: This option will remove all deposit address inside account of username field"
+    }
+  },
+  "rev_shared": {
+    "date_range_picker": {
+      "label": {
+        "start_date": "Start Date",
+        "end_date": "End Date",
+        "to": "To"
+      },
+      "error": "The date format is incorrect !"
+    },
+    "button": {
+      "invite": "Invite",
+      "advance_search": "Advance Search",
+      "apply": "Apply"
+    },
+    "switch": {
+      "status": {
+        "on": "On",
+        "off": "Off"
+      }
+    },
+    "label": {
+      "birth_date": "Birth Date",
+      "select_country": "Select Country",
+      "select_region": "Select Region",
+      "time_zone": "Time zone",
+      "select_timezone": "select timezone",
+      "service_status": "Service status",
+      "select_date": "Select Date Range"
+    },
+    "enums": {
+      "actions": {
+        "p_ban": "Ban",
+        "p_unban": "UNBAN",
+        "p_approve": "APPROVE",
+        "p_reject": "REJECT",
+        "p_cancelled": "CANCELLED",
+        "p_copy_invitation_link": "Copy invitation link",
+        "p_cancel_invitation": "Cancel invitation",
+        "p_resend": "Resend mail",
+        "u_ban": "BAN",
+        "u_unban": "UNBAN",
+        "u_approve": "APPROVE",
+        "u_reject": "REJECT",
+        "u_copy_invitation_link": "Copy invitation link",
+        "u_cancel_invitation": "Cancel invitation",
+        "u_resend": "Resend mail",
+        "transaction_approve_by_admin": "Approve",
+        "transaction_reject_by_admin": "Reject",
+        "tx_approve": "APPROVE",
+        "tx_reject": "REJECT",
+        "tx_manual": "MANUAL"
+      },
+      "status": {
+        "user": {
+          "u_active": "ACTIVE",
+          "u_pending": "PENDING",
+          "u_suspended": "SUSPENDED",
+          "u_banned": "BANNED",
+          "u_rejected": "REJECTED",
+          "u_cancelled": "CANCELLED"
+        },
+        "partner": {
+          "p_active": "ACTIVE",
+          "p_pending": "PENDING",
+          "p_suspended": "SUSPENDED",
+          "p_banned": "BANNED",
+          "p_rejected": "REJECTED",
+          "p_cancelled": "CANCELLED"
+        },
+        "payment": {
+          "pending": "PENDING",
+          "reverted": "REVERTED",
+          "rejected": "REJECTED",
+          "finished": "FINISHED",
+          "cancelled": "CANCELLED",
+          "failed": "FAILED"
+        },
+        "order": {
+          "pending": "PENDING",
+          "finish": "FINISH",
+          "cancel": "CANCEL",
+          "rejected": "REJECTED",
+          "revert": "REVERT"
+        },
+        "transaction": {
+          "pending": "PENDING",
+          "finished": "FINISHED",
+          "cancelled": "CANCELLED",
+          "rejected": "REJECTED",
+          "revert": "REVERT",
+          "pending_admin_approval": "PENDING ADMIN APPROVAL",
+          "pending_partner_approval": "PENDING PARTNER APPROVAL",
+          "pending_admin_manual": "MANUAL_ADMIN"
+        },
+        "bill": {
+          "reverted": "REVERTED",
+          "failed": "FAILED",
+          "expired": "EXPIRED",
+          "pending": "PENDING",
+          "created": "CREATED",
+          "paid": "PAID",
+          "hold": "HOLD",
+          "closed": "CLOSED",
+          "not_enough_fund": "NOT ENOUGH FUND",
+          "confirmed": "CONFIRM"
+        },
+        "coin": {
+          "active": "ACTIVE",
+          "inactive": "INACTIVE"
+        }
+      },
+      "type": {
+        "transaction": {
+          "deposit": "Deposit",
+          "transfer": "Transfer",
+          "withdraw": "Withdraw"
+        },
+        "bill": {
+          "deposit": "Deposit",
+          "transfer": "Transfer",
+          "withdraw": "Withdraw"
+        }
+      }
+    },
+    "ewallet": {
+      "id": "Id",
+      "owner": "Owner"
+    },
+    "upload_avatar": {
+      "trigger_label": "Change avatar",
+      "choose_file": "Choose file",
+      "ok": "Ok",
+      "error_limit_size": "The image limit size too large, please choose the image with no more than {{ imageSize }} MB"
+    },
+    "upload_icon": {
+      "trigger_label": "Change icon",
+      "choose_file": "Choose file",
+      "ok": "Ok",
+      "error_limit_size": "The image limit size too large, please choose the image with no more than {{ imageSize }} MB"
+    },
+    "billing_card": {
+      "label": {
+        "id": "Id",
+        "bill_type": "Bill Type",
+        "owner_name": "Owner Name",
+        "currency": "Currency",
+        "tracking_id": "Tracking id",
+        "address": "Address",
+        "status": "Status",
+        "date_created": "Date created",
+        "date_updated": "Date updated",
+        "amount": "Amount",
+        "actual_amount": "Actual amount",
+        "transaction_fee": "Transaction fee"
+      }
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "popup": {
+      "button": {
+        "close": "Close"
+      }
+    },
+    "message": {
+      "not_found_coin": "This coin not found",
+      "not_found_user": "This user not found or not active yet",
+      "partner_empty_ewallet": "This partner doesn't have any wallet",
+      "empty_ewallet": "You don't have any wallet",
+      "empty_ewallet_user": "This user don't have any wallet",
+      "empty_bill": "not found any bill",
+      "empty_transaction": "not found any transaction",
+      "password_recommend": "Password must be at least eight characters, should contain uppercase and lowercase characters, numbers, spaces, and special characters."
+    },
+    "reset_password": {
+      "title": "Reset your password",
+      "label": {
+        "new_password": "New password",
+        "re_new_password": "Re-type new password",
+        "reset_password": "Reset Password"
+      },
+      "button": {
+        "reset_password": "Reset Password",
+        "back_to_home": "Back to home page",
+        "get_new_password": "Get New Password"
+      },
+      "message": {
+        "notify_verify_password": "Please enter your password to confirm",
+        "generate_password_success": "New password for "
+      }
+    },
+    "do_success": {
+      "label": "Back to homepage"
+    },
+    "placeholder": {
+      "password": "Password"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+type Mail {
+  to: String!
+  from: String
+  subject: String
+  html: String
+}
+
+type EmailTemplate {
+  id: String!
+  name: String
+  generation: String
+  versions: [EmailTemplateVersion]
+}
+
+type EmailTemplateVersion {
+  id: String!
+  template_id: String!
+  name: String
+  html_content: String
+  plain_content: String
+  subject: String
+  editor: String
+  updated_at: String
+}
+type Query {
+  get_all_templates: [EmailTemplate!]!
+  get_detail_template(template_id: String!): EmailTemplate
+}
+type Mutation {
+  send_mail(to: String!, from: String, subject: String, html: String): Mail!
+}

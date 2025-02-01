@@ -1,0 +1,273 @@
+{
+  "required_field": "必要箇所",
+  "invalid_email": "無効なEメールアドレス",
+  "not_expired_yet": "まだ期限内です!",
+  "save_success": "正常に保存しました",
+  "actions_button": {
+    "ban": "禁止",
+    "unban": "合法化",
+    "approve": "承認する",
+    "reject": "拒否する"
+  },
+  "profile": {
+    "title": {
+      "username": "ユーザーネーム",
+      "fullname": "氏名",
+      "email": "Eメール",
+      "your_profile": "プロフィール"
+    },
+    "button": {
+      "edit": "編集する",
+      "change_password": "パスワードの変更"
+    }
+  },
+  "edit_profile": {
+    "title": "管理者プロフィールを編集",
+    "label": {
+      "admin_name": "名前",
+      "email": "Eメール"
+    },
+    "button": {
+      "save": "保存する",
+      "reset": "リセットする"
+    }
+  },
+  "change_password": {
+    "button": {
+      "change_password": "パスワードを変更する"
+    },
+    "title": "パスワードを変更する",
+    "label": {
+      "current_password": "直近のパスワード",
+      "new_password": "新規パスワード",
+      "re_new_password": "新規パスワードを再入力"
+    }
+  },
+  "forgot_password": {
+    "title": "パスワードをリセット",
+    "label": {
+      "input_email": "Eメールを入力する"
+    },
+    "button": {
+      "get_email_confirm": "確認メールを受け取る"
+    },
+    "message": {
+      "check_your_email": "Eメールにパスワード再設定のリンクが届いているか確認して下さい。"
+    }
+  },
+  "ewallet": {
+    "sync_wallet": "ウォレット残高を同期する",
+    "sync_multiple": "複数のウォレット残高を同期する",
+    "refresh_deposit_adr": "入金アドレス消去する",
+    "renew_deposit_adr": {
+      "username": "ユーザーネーム",
+      "coin_id": "コインID",
+      "tracking_id": "追跡ID",
+      "title": "入金アドレス消去する",
+      "submit": "許可する",
+      "reset": "リセットする",
+      "tooltip_sync": "ウォレット残高を同期する",
+      "empty_deposit": "入金アドレスが空欄です",
+      "warning": "注意：このオプションはユーザーネーム欄のアカウント内全ての入金アドレスを削除します。"
+    }
+  },
+  "rev_shared": {
+    "date_range_picker": {
+      "label": {
+        "start_date": "開始日",
+        "end_date": "終了日",
+        "to": "へ"
+      },
+      "error": "日付の形式が正しくありません！"
+    },
+    "button": {
+      "invite": "招待する",
+      "advance_search": "検索に進む",
+      "apply": "申込む"
+    },
+    "switch": {
+      "status": {
+        "on": "オン",
+        "off": "オフ"
+      }
+    },
+    "label": {
+      "birth_date": "生年月日",
+      "select_country": "国を選択",
+      "select_region": "地域を選択",
+      "time_zone": "タイムゾーン",
+      "select_timezone": "タイムゾーンを選択",
+      "service_status": "サービスステータス",
+      "select_date": "日付範囲を選択"
+    },
+    "enums": {
+      "actions": {
+        "p_ban": "禁止",
+        "p_unban": "合法化",
+        "p_approve": "承認する",
+        "p_reject": "拒否する",
+        "p_cancelled": "キャンセルした",
+        "p_copy_invitation_link": "招待リンクをコピー",
+        "p_cancel_invitation": "招待をキャンセル",
+        "p_resend": "メールを再送信",
+        "u_ban": "禁止",
+        "u_unban": "合法化",
+        "u_approve": "承認する",
+        "u_reject": "拒否する",
+        "u_copy_invitation_link": "招待リンクをコピー",
+        "u_cancel_invitation": "招待をキャンセル",
+        "u_resend": "メールを再送信",
+        "transaction_approve_by_admin": "承認する",
+        "transaction_reject_by_admin": "拒否する",
+        "tx_approve": "承認する",
+        "tx_reject": "拒否する",
+        "tx_manual": "手動"
+      },
+      "status": {
+        "user": {
+          "u_active": "稼働中",
+          "u_pending": "保留中",
+          "u_suspended": "一時停止",
+          "u_banned": "禁止された",
+          "u_rejected": "拒否された",
+          "u_cancelled": "キャンセルされた"
+        },
+        "partner": {
+          "p_active": "稼働中",
+          "p_pending": "保留中",
+          "p_suspended": "一時停止",
+          "p_banned": "禁止された",
+          "p_rejected": "拒否された",
+          "p_cancelled": "キャンセルされた"
+        },
+        "payment": {
+          "pending": "保留中",
+          "reverted": "元に戻された",
+          "rejected": "拒否された",
+          "finished": "完了した",
+          "cancelled": "キャンセルされた",
+          "failed": "失敗"
+        },
+        "order": {
+          "pending": "保留中",
+          "finish": "完了",
+          "cancel": "キャンセル",
+          "rejected": "拒否された",
+          "revert": "元に戻された"
+        },
+        "transaction": {
+          "pending": "保留中",
+          "finished": "完了した",
+          "cancelled": "キャンセルされた",
+          "rejected": "拒否された",
+          "revert": "元に戻す",
+          "pending_admin_approval": "管理者承認の保留中",
+          "pending_partner_approval": "パートナー承認の保留中",
+          "pending_admin_manual": "手動管理"
+        },
+        "bill": {
+          "reverted": "元に戻された",
+          "failed": "失敗",
+          "expired": "期限切れ",
+          "pending": "保留中",
+          "created": "作成した",
+          "paid": "支払済",
+          "hold": "継続中",
+          "closed": "クローズ",
+          "not_enough_fund": "資金が不足しています",
+          "confirmed": "確認"
+        },
+        "coin": {
+          "active": "稼働中",
+          "inactive": "休止"
+        }
+      },
+      "type": {
+        "transaction": {
+          "deposit": "入金",
+          "transfer": "両替",
+          "withdraw": "出金"
+        },
+        "bill": {
+          "deposit": "入金",
+          "transfer": "両替",
+          "withdraw": "出金"
+        }
+      }
+    },
+    "ewallet": {
+      "id": "ID",
+      "owner": "オーナー"
+    },
+    "upload_avatar": {
+      "trigger_label": "アバターを変更",
+      "choose_file": "ファイルを選択",
+      "ok": "OK",
+      "error_limit_size": "画像サイズが大きすぎます。{{imageSize}} MB以下の画像を選択してください"
+    },
+    "upload_icon": {
+      "trigger_label": "アイコンを変更",
+      "choose_file": "ファイルを選択",
+      "ok": "OK",
+      "error_limit_size": "画像サイズが大きすぎます。{{imageSize}} MB以下の画像を選択してください"
+    },
+    "billing_card": {
+      "label": {
+        "id": "ID",
+        "bill_type": "請求タイプ",
+        "owner_name": "オーナーネーム",
+        "currency": "通貨",
+        "tracking_id": "追跡ID",
+        "address": "住所",
+        "status": "ステータス",
+        "date_created": "作成日",
+        "date_updated": "更新日",
+        "amount": "数量",
+        "actual_amount": "実際の数量",
+        "transaction_fee": "取引手数料"
+      }
+    },
+    "pagination": {
+      "previous": "前",
+      "next": "次"
+    },
+    "popup": {
+      "button": {
+        "close": "閉じる"
+      }
+    },
+    "message": {
+      "not_found_coin": "このコインは見つかりません。",
+      "not_found_user": "このユーザーは存在しないか、まだアクティブではありません。",
+      "partner_empty_ewallet": "このパートナーはウォレットを持っていません。",
+      "empty_ewallet": "ウォレットを持っていません。",
+      "empty_ewallet_user": "このユーザーはウォレットを持っていません。",
+      "empty_bill": "請求書が見つかりませんでした。",
+      "empty_transaction": "取引が見つかりませんでした。",
+      "password_recommend": "パスワードは8文字以上である必要があります。（大文字、小文字、英語、数字、スペース、記号を入力することでより強固なパスワードになります。）"
+    },
+    "reset_password": {
+      "title": "パスワードをリセットする",
+      "label": {
+        "new_password": "新規パスワード",
+        "re_new_password": "新規パスワードの再入力",
+        "reset_password": "パスワードをリセットする"
+      },
+      "button": {
+        "reset_password": "パスワードをリセットする",
+        "back_to_home": "ホームページに戻る",
+        "get_new_password": "新規パスワードを取得する"
+      },
+      "message": {
+        "notify_verify_password": "確認のため、パスワードをご入力ください。",
+        "generate_password_success": "新規パスワード"
+      }
+    },
+    "do_success": {
+      "label": "ホームページに戻る"
+    },
+    "placeholder": {
+      "password": "パスワード"
+    }
+  }
+}

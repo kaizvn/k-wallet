@@ -1,0 +1,14 @@
+export const HEIAU_COIN_ID = 'heiau';
+export const BTC_COIN_ID = 'btc';
+export const ETH_COIN_ID = 'eth';
+export const RIPPLE_COIN_ID = 'ripple';
+export const DASH_COIN_ID = 'dash';
+export const BLOCKCYPHER_COIN_ID = 'bcy';
+export const DOGE_COIN_ID = 'doge';
+export const LTC_COIN_ID = 'ltc';
+export const BETH_COIN_ID = 'beth';
+export const USDT_COIN_ID = 'usdt';
+export const USDC_COIN_ID = 'usdc';
+export const DAI_COIN_ID = 'dai';
+export const TETH_COIN_ID = 'teth';
+export const FAU_COIN_ID = 'fau';

@@ -1,0 +1,29 @@
+{
+  "options": {
+    "profile": "プロフィール",
+    "settings": "設定",
+    "help": "ヘルプ",
+    "logout": "ログアウト",
+    "customer": "カスタマー"
+  },
+  "page_header": {
+    "user": {
+      "dashboard": "ユーザーダッシュボード",
+      "bills": "ユーザー請求書",
+      "change_password": "ユーザーのパスワードを変更する",
+      "deposit": "ユーザー入金",
+      "forgot_password": "ユーザーがパスワードを忘れた",
+      "payments": "ユーザー支払",
+      "profile": "ユーザープロフィール",
+      "register_success": "ユーザー登録が成功",
+      "reset_password": "ユーザーパスワードリセット",
+      "transaction_details": "ユーザー取引詳細",
+      "transactions": "ユーザー取引",
+      "two_factor": "ユーザー二段階認証",
+      "wallets": "ユーザーウォレット",
+      "withdraw": "ユーザー出金",
+      "settings": "ユーザー設定",
+      "transfer": "ユーザー両替"
+    }
+  }
+}

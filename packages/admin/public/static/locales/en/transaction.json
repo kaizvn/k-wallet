@@ -1,0 +1,17 @@
+{
+  "billing": {
+    "details": {
+      "title": "Billing Details",
+      "button": {
+        "view_transaction_details": "View Transaction Details"
+      }
+    }
+  },
+  "deposit": {},
+  "ewallets": {},
+  "history": {},
+  "payment": {},
+  "transaction": {},
+  "transfer": {},
+  "withdrawal": {}
+}

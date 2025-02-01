@@ -1,0 +1,65 @@
+{
+  "login": {
+    "title": "ユーザーログイン",
+    "button": {
+      "login": "ログイン",
+      "register": "登録"
+    },
+    "label": {
+      "remember_me": "記憶する",
+      "forgot_password": "パスワードをお忘れですか？",
+      "copyright": "2019 RevPayment",
+      "privacy_policy": "プライバシーポリシー",
+      "contact": "問合せ先",
+      "connect_with": "または　と接続する",
+      "sign_up": "お口座をお持ちではないですか？ご登録下さい。"
+    },
+    "placeholder": {
+      "username": "ユーザーネーム",
+      "password": "パスワード",
+      "auth_code": "オーセンコード"
+    }
+  },
+  "register": {
+    "title": "登録",
+    "placeholder": {
+      "username": "ユーザーネーム",
+      "password": "パスワード",
+      "email": "Eメール",
+      "mcc_code": "JP:+81",
+      "phone_number": "電話番号",
+      "firstname": "名",
+      "lastname": "氏",
+      "id_passport": "ID No. / パスポート No."
+    },
+    "button": {
+      "register": "登録"
+    },
+    "label": {
+      "label_normal": {
+        "terms": "登録をクリックすると同意します",
+        "already_account": "既にお口座をお持ちですか？"
+      },
+      "label_link": {
+        "login": "ログイン",
+        "terms": "利用規約"
+      },
+      "username": "ユーザーネーム",
+      "password": "パスワード",
+      "email": "Eメール",
+      "mcc_code": "Mccコード",
+      "phone_number": "電話番号",
+      "firstname": "名",
+      "lastname": "氏",
+      "id_passport": "ID No. / パスポート No."
+    }
+  },
+  "register_success": {
+    "title": "ご予約を受付ました！",
+    "label": {
+      "send_confirmation": "確認の為すぐにメールをお送り致します。",
+      "back_to_home": "ホームページに戻る",
+      "click_here": "こちらをクリックする"
+    }
+  }
+}

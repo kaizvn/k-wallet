@@ -1,0 +1,52 @@
+type Invoice {
+  id: ID!
+  owner: Partner!
+  invoiceCode: String!
+  status: InvoiceStatus
+  to: InvoiceClient!
+  carbonCopy: [String]
+  totalAmount: Float!
+  note: String
+  dueDate: DateTime
+  invoiceItems: [InvoiceItem!]!
+  invoiceCoins: [InvoiceCoin!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+enum InvoiceStatus {
+  OVERDUE
+  OPEN
+  CONFIRMED
+  CANCELLED
+}
+
+type Query {
+  get_quick_filter_invoices(filter: FilterTable!): FilterInvoiceResult!
+  get_invoice(id: ID!): Invoice!
+}
+
+input InvoiceItemInput {
+  name: String!
+  description: String
+  quantity: Float!
+  price: Float!
+}
+
+input InvoiceCoinInput {
+  coinId: String
+  subTotal: Float!
+}
+
+type Mutation {
+  create_new_invoice(
+    invoiceCode: String!
+    note: String
+    toId: String!
+    carbonCopy: [String]
+    items: [InvoiceItemInput!]!
+    coins: [InvoiceCoinInput!]!
+    dueDate: DateTime
+  ): Invoice!
+  re_send_invoice_mail(invoiceID: ID!): Invoice!
+}

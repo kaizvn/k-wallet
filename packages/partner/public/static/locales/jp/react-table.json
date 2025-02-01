@@ -1,0 +1,130 @@
+{
+  "table": {
+    "body": {
+      "no_row": "表示する履歴はございません",
+      "add": "追加",
+      "delete": "削除する",
+      "edit": "編集する",
+      "filter": "フィルター",
+      "confirm": "削除をしてよろしいでしょうか？",
+      "cancel": "キャンセル",
+      "save": "保存する"
+    },
+    "grouping": {
+      "placeholder": "ヘッダーをドラッグする",
+      "grouped_by": "グループ"
+    },
+    "header": {
+      "action": "アクション"
+    },
+    "pagination": {
+      "of_text": "of",
+      "rows": "列",
+      "row_per_page": "1ページ当たりの行数",
+      "first_page": "最初のページ",
+      "previous_page": "前のページ",
+      "next_page": "次のページ",
+      "last_page": "最新のページ"
+    },
+    "toolbar": {
+      "add_or_remove": "コラムを追加もしくは削除する",
+      "row_selected": "選択された列",
+      "show_columns": "コラムを見る",
+      "export": "出力する",
+      "export_as": "CSVを出力する",
+      "search": "検索"
+    },
+    "next_text": "次",
+    "previous_text": "前",
+    "loading_text": "ロード中",
+    "no_rows_text": "列が見つかりませんでした",
+    "page_text": "ページ",
+    "rows_text": "列",
+    "of_text": "of",
+    "member": {
+      "manage": {
+        "title": "メンバー管理",
+        "header": {
+          "member_name": "メンバー名",
+          "email": "E-メール",
+          "role": "役割",
+          "join_date": "参加日",
+          "owner": "オーナー",
+          "status": "ステータス",
+          "action": "アクション"
+        },
+        "placeholder_search": "名前もしくはメンバーを検索する"
+      }
+    },
+    "transaction": {
+      "payment": {
+        "title": "外部取引",
+        "header": {
+          "payment_date": "支払日",
+          "status": "ステータス",
+          "currency": "通貨",
+          "hash": "Hash",
+          "amount": "額",
+          "receiver": "受取人",
+          "fee": "手数料",
+          "bill": "請求書",
+          "resend_callback": "コールバックを再送信"
+        },
+        "placeholder_search": "Hashで検索する",
+        "deposit": "入金",
+        "withdraw": "出金",
+        "re_send": "再送信"
+      },
+      "transactions": {
+        "title": "内部取引",
+        "header": {
+          "payment_date": "支払日",
+          "status": "ステータス",
+          "currency": "通貨",
+          "hash": "Hash",
+          "amount": "額",
+          "from": "From",
+          "to": "To",
+          "actions": "アクション"
+        },
+        "placeholder_search": "送信人、受取人、名前で検索する",
+        "transfer": "内部送金"
+      },
+      "billing": {
+        "title": "請求書",
+        "header": {
+          "owner_name": "オーナー名",
+          "address": "アドレス",
+          "status": "ステータス",
+          "currency": "通貨",
+          "amount": "額",
+          "actual_amount": "実際の額",
+          "payment_date": "支払日",
+          "expired_date": "期限切れ日"
+        },
+        "placeholder_search": "オーナの名前、もしくはアドレスで検索"
+      }
+    },
+    "invoice": {
+      "header": {
+        "date": "日付作成",
+        "invoice": "請求書 #",
+        "due_date": "期日",
+        "client": "クライアント",
+        "status": "ステータス",
+        "amount": "額",
+        "actions": "アクション"
+      },
+      "placeholder_search": "Search invoice code"
+    },
+    "invoice_client": {
+      "header": {
+        "no": "Client No.",
+        "name": "Client Name",
+        "email": "Client Email",
+        "actions": "アクション"
+      },
+      "placeholder_search": "Search client name or email"
+    }
+  }
+}

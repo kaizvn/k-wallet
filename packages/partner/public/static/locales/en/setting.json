@@ -1,0 +1,28 @@
+{
+  "partner_setting": {
+    "title": "Partner Setting",
+    "label": {
+      "callback_url": "Callback URL",
+      "partner_name": "Partner name",
+      "partner_desc": "Partner description",
+      "limit_transfer": "Limit Transfer per Day",
+      "service_status": "Service status"
+    },
+    "button": {
+      "save": "Save"
+    }
+  },
+  "account_setting": {
+    "title": "Account Setting",
+    "label": {
+      "language": "Language"
+    },
+    "button": {
+      "save": "Save"
+    },
+    "message": {
+      "save_success": "Save successfully"
+    }
+  },
+  "permissions": {}
+}

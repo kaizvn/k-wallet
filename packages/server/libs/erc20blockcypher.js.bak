@@ -1,0 +1,58 @@
+import { concat, flow, join } from 'lodash/fp';
+
+import { BlockCypherAPI } from './';
+
+const API_URL = process.env.BLOCKCYPHER_API_URL;
+const API_VERSION = process.env.API_VERSION || 'v1';
+
+const createAPIUrl = flow(concat([API_URL, API_VERSION]), join('/'));
+
+class ERC20 extends BlockCypherAPI {
+  constructor({
+    contract,
+    mainToken = 'eth',
+    chain = 'test',
+    isEther = true,
+    isPFSupport = false,
+    ...props
+  }) {
+    super(props);
+    this.contract = contract;
+    this.isPFSupport = isPFSupport;
+    this.mainUrl = createAPIUrl([mainToken, chain]);
+    this.isEther = isEther;
+  }
+
+  getAPIUrl() {}
+
+  async getContractInfo() {
+    const url = this.createUrl([this.contract]);
+    return this.doGet(url);
+  }
+
+  async gettingBalance(privateKey, address) {
+    const url = this.createUrl([this.contract, 'balanceOf']);
+
+    const data = {
+      private: privateKey,
+      gas_limit: 200000,
+      params: [address]
+    };
+
+    return this.doPost(url, data);
+  }
+
+  async transferERC20(fromPrivateKey, toAddress, amount) {
+    const url = this.createUrl([this.contract, 'transfer']);
+
+    const data = {
+      private: fromPrivateKey,
+      gas_limit: 200000,
+      params: [toAddress, amount]
+    };
+
+    return this.doPost(url, data);
+  }
+}
+
+export default ERC20;

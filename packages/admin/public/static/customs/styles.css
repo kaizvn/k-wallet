@@ -1,0 +1,292 @@
+body > div#__next,
+#__next,
+#__next > div {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #25628f;
+  outline: none;
+}
+
+.body-login-page {
+  padding-bottom: 12px;
+}
+
+.sc-hidden {
+  visibility: hidden;
+}
+
+.sc-navbar {
+  color: #fff;
+}
+.sc-text-wordwrap {
+  word-wrap: break-word;
+  max-width: 120px;
+}
+.form-group-btn-register {
+  flex: 1;
+  margin-left: 4px;
+}
+
+.form-group-btn-login {
+  flex: 2;
+}
+
+.flex-container-btn-loginpage {
+  display: flex;
+}
+
+.form-group-username,
+.form-group-password {
+  flex: 3;
+}
+
+.ks-page .ks-page-content .ks-panel.sc-register {
+  width: 600px;
+}
+
+.form-group-btn-register {
+  flex: 1;
+  margin-left: 4px;
+}
+
+.form-group-btn-login {
+  flex: 2;
+}
+
+.flex-container-btn-loginpage {
+  display: flex;
+}
+
+.form-group-username,
+.form-group-password {
+  flex: 3;
+}
+
+/* style hompage */
+.sc-home {
+  min-height: calc(100vh - 60px);
+  overflow: hidden;
+  -webkit-background-size: contain;
+  background-size: cover;
+  position: relative;
+}
+.sc-home .sc-main {
+  position: relative;
+  height: 100%;
+  min-height: calc(100vh - 60px);
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.sc-home .sc-main .description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.sc-home .sc-main .description h1.title {
+  color: #5440ae;
+  font-size: 50px;
+}
+.sc-home .sc-main .description .sc-brief {
+  color: #745ec5;
+  font-size: 18px;
+  text-align: justify;
+}
+.sc-home .sc-cta-group {
+  display: flex;
+  margin: 40px auto;
+}
+.sc-home .sc-cta-group .sc-btn {
+  background: linear-gradient(to right, #6f6be1, #9897f6);
+  border: 1px solid #fff;
+  box-shadow: 0 5px 20px 0 rgba(179, 179, 179, 0.82);
+  font-size: 18px;
+  flex: 1;
+  padding: 10px 25px;
+  margin: 0 12px;
+  min-width: 125px;
+  height: auto;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.sc-home .sc-cta-group .sc-btn.signin {
+  margin-left: 0;
+}
+.sc-home .sc-cta-group .sc-btn.signup {
+  margin-right: 0;
+}
+
+.sc-home .sc-cta-group .sc-btn:hover {
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 20px -10px rgba(179, 179, 179, 0.82);
+}
+.sc-home .building .building-img {
+  max-height: 80vh;
+  margin-top: 10vh;
+}
+.sc-home .sc-materials {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.sc-home .circle-group .circle1 {
+  position: absolute;
+  width: 300px;
+  top: -200px;
+  left: 250px;
+}
+.sc-home .circle-group .circle2 {
+  position: absolute;
+  width: 500px;
+  bottom: -300px;
+  left: -120px;
+}
+
+.sc-home .circle-group .circle3 {
+  position: absolute;
+  width: 70px;
+  top: 40px;
+  left: 550px;
+}
+.sc-home .circle-group .circle4 {
+  position: absolute;
+  width: 300px;
+  top: -200px;
+  right: -90px;
+}
+@media screen and (max-width: 768px) {
+  .sc-home {
+    min-height: 100vh;
+    height: auto;
+  }
+  .sc-home .sc-main .description h1.title {
+    font-size: 46px;
+  }
+  .sc-home .building .building-img {
+    margin-top: 0;
+    padding: 20px;
+  }
+  .sc-home .circle-group .circle1 {
+    position: absolute;
+    width: 120px;
+    top: -60px;
+    left: 20px;
+  }
+  .sc-home .circle-group .circle2 {
+    position: absolute;
+    width: 500px;
+    bottom: -200px;
+    left: -120px;
+  }
+  .sc-home .circle-group .circle3 {
+    position: absolute;
+    width: 60px;
+    top: 40px;
+    left: 150px;
+  }
+  .sc-home .circle-group .circle4 {
+    position: absolute;
+    width: 200px;
+    top: 100px;
+    right: -90px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .sc-home .sc-main {
+    min-height: auto;
+  }
+  .sc-home .sc-main .description {
+    bottom: inherit;
+    left: inherit;
+    right: inherit;
+    padding-top: 30px;
+    position: relative;
+    top: inherit;
+    transform: inherit;
+  }
+}
+/* end style hompage */
+
+#index-header {
+  border-right: 1px solid rgba(57, 80, 155, 0.1);
+}
+.card-add-new-wallet,
+.wallet-table,
+.relative-wallet-form {
+  position: relative;
+}
+.card-add-new-wallet {
+  width: 50%;
+  top: -500px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: solid 1px #dee0e1;
+  left: 25%;
+}
+.wallet-table {
+  top: -250px;
+}
+.card-add-new-wallet,
+.wallet-table {
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+}
+
+.wallet-table.ks-open,
+.card-add-new-wallet.ks-open {
+  top: 0;
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+}
+.add-new-wallet {
+  position: absolute;
+  left: 30%;
+}
+h3.title-add-new-wallet {
+  color: #466bde;
+}
+.wrapper {
+  position: relative;
+  padding: 0px !important;
+}
+
+.wrapper-inner {
+  position: absolute;
+  font-size: 18px;
+  width: 100%;
+  transform: translate(0%, 0%);
+  /* top: 50%; */
+  min-height: 80vh;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.ks-theme-royal-blue .card-text {
+  font-size: 16px;
+}
+
+.overflow-dropbox {
+  overflow: visible !important;
+}
+
+.shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.shadow-0 {
+  box-shadow: 0 2px 6px rgba(28, 35, 43, 0.06) !important;
+}
+
+.disabled-button > a > .primary-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}

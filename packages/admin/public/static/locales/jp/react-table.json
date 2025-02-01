@@ -1,0 +1,193 @@
+{
+  "add": "加えます",
+  "add_new_wallet": "新しいウォレットを追加",
+  "table": {
+    "body": {
+      "no_row": "表示する履歴はございません",
+      "add": "追加",
+      "delete": "削除する",
+      "edit": "編集する",
+      "filter": "フィルター",
+      "confirm": "削除をしてよろしいでしょうか？",
+      "cancel": "キャンセル",
+      "save": "保存する"
+    },
+    "grouping": {
+      "placeholder": "ヘッダーをドラッグする",
+      "grouped_by": "グループ"
+    },
+    "header": {
+      "action": "アクション"
+    },
+    "pagination": {
+      "of_text": "of",
+      "rows": "列",
+      "row_per_page": "1ページ当たりの行数",
+      "first_page": "最初のページ",
+      "previous_page": "前のページ",
+      "next_page": "次のページ",
+      "last_page": "最新のページ"
+    },
+    "toolbar": {
+      "add_or_remove": "コラムを追加もしくは削除する",
+      "row_selected": "選択された列",
+      "show_columns": "コラムを見る",
+      "export": "出力する",
+      "export_as": "CSVを出力する",
+      "search": "検索"
+    },
+    "next_text": "次",
+    "previous_text": "前",
+    "loading_text": "ロード中",
+    "no_rows_text": "列が見つかりませんでした",
+    "page_text": "ページ",
+    "rows_text": "列",
+    "of_text": "of",
+    "partner_manage": {
+      "title": "パートナー管理",
+      "header": {
+        "partner": "相棒",
+        "join_date": "参加日",
+        "owner": "オーナー",
+        "email": "E-メール",
+        "status": "ステータス"
+      },
+      "placeholder_search": "名前またはメールを検索"
+    },
+    "partner_user": {
+      "title": "パートナーユーザー管理",
+      "header": {
+        "fullname": "名前",
+        "email": "E-メール",
+        "partner_name": "パートナーネーム",
+        "role": "役割",
+        "join_date": "参加日",
+        "status": "ステータス"
+      },
+      "placeholder_search": "パートナーユーザーの名前またはメールを検索"
+    },
+    "moderator_manage": {
+      "title": "モデレーター管理",
+      "header": {
+        "fullname": "名前",
+        "email": "E-メール",
+        "date_create": "作成日",
+        "status": "ステータス",
+        "action": "アクション"
+      },
+      "placeholder_search": "フルネームまたは電子メールを検索します"
+    },
+    "user_manage": {
+      "title": "ユーザー管理",
+      "header": {
+        "fullname": "名前",
+        "email": "E-メール",
+        "date_create": "作成日",
+        "status": "ステータス",
+        "action": "アクション"
+      },
+      "placeholder_search": "フルネームまたは電子メールを検索します"
+    },
+    "transaction_wallets": {
+      "placeholder_search": "検索の所有者の名前や財布のアドレス",
+      "message_empty_ewallet": "Ewalletが見つかりません!"
+    },
+    "transaction_billing": {
+      "title": "請求書",
+      "header": {
+        "owner_name": "オーナー名",
+        "address": "アドレス",
+        "status": "ステータス",
+        "currency": "通貨",
+        "amount": "額",
+        "actual_amount": "実際の額",
+        "payment_date": "支払日",
+        "expired_date": "期限切れ日"
+      },
+      "placeholder_search": "オーナの名前、もしくはアドレスで検索"
+    },
+    "transactions_manage": {
+      "title": "内部取引",
+      "header": {
+        "payment_date": "支払日",
+        "status": "ステータス",
+        "currency": "通貨",
+        "hash": "Hash",
+        "amount": "額",
+        "from": "From",
+        "to": "To",
+        "actions": "アクション"
+      },
+      "placeholder_search": "送信人、受取人、名前で検索する",
+      "transfer": "内部送金",
+      "manual": {
+        "title": "手動トランザクション",
+        "label": "トランザクションハッシュ",
+        "submit": "提出する"
+      }
+    },
+    "coins_manage": {
+      "title": "コイン管理",
+      "header": {
+        "id": "ID",
+        "name": "名前",
+        "symbol": "シンボル",
+        "logo": "ロゴ",
+        "status": "ステータス",
+        "support_compound": "サポートコンバウンド",
+        "fee_percentage": "料金 %",
+        "fee_fixed": "固定料金",
+        "minimum_withdraw": "最低出金額",
+        "decimals": "少数",
+        "network": "ネットワークタイプ",
+        "support_PF": "前払いのサポート",
+        "date_create": "作成日",
+        "contract_address": "契約アドレス",
+        "actions": "アクション"
+      },
+      "placeholder_search": "検索名やシンボル",
+      "add_new_coin": "新しいコインを追加"
+    },
+    "transactions_pending_manage": {
+      "title": "承認待ちトランザクション",
+      "header": {
+        "payment_date": "支払日",
+        "status": "ステータス",
+        "currency": "通貨",
+        "hash": "Hash",
+        "amount": "額",
+        "from": "From",
+        "to": "To"
+      },
+      "placeholder_search": "送信者や受信者の検索名前",
+      "transfer": "内部送金"
+    },
+    "payments_manage": {
+      "title": "外部取引",
+      "header": {
+        "payment_date": "支払日",
+        "status": "ステータス",
+        "currency": "通貨",
+        "hash": "Hash",
+        "amount": "額",
+        "receiver": "受取人",
+        "fee": "手数料",
+        "bill": "請求書"
+      },
+      "placeholder_search": "Hashで検索する"
+    },
+    "members_management": {
+      "title": "メンバー管理",
+      "header": {
+        "id": "ID",
+        "member_name": "メンバー名",
+        "member_username": "メンバーユーザー名",
+        "partner_id": "パートナーID",
+        "join_date": "参加日",
+        "email": "E-メール",
+        "role": "役割",
+        "status": "ステータス"
+      }
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "index": {
+    "button": {
+      "join_us_today": "Join us today!",
+      "login": "Login"
+    },
+    "title": "REV PAYMENT",
+    "label": {
+      "label_one": "RevPayment provides a Payment Solution for your CryptoCurrencies: Safe, Fast, Reliable, and Easy to manage.",
+      "label_two": "With experience in building Payment System since 2014, Revollet Group believes Revpayment can make the CryptoCurrency transactions be more simple than ever."
+    }
+  },
+  "required_field": "Required field.",
+  "invalid_email": "Invalid email address",
+  "save_success": "Save successfully",
+  "profile": {
+    "title": {
+      "username": "Username",
+      "fullname": "Full Name",
+      "email": "Email"
+    },
+    "button": {
+      "edit": "Edit",
+      "change_password": "Change password"
+    }
+  },
+  "edit_profile": {
+    "title": "Edit Admin Profile",
+    "label": {
+      "admin_name": "Your Name",
+      "email": "Email"
+    },
+    "button": {
+      "save": "Save",
+      "reset": "Reset"
+    }
+  },
+  "message": {
+    "empty_bill": "not found any bill",
+    "empty_ewallet": "You don't have any wallet",
+    "empty_payment": "not found any payment",
+    "empty_transaction": "not found any transaction"
+  },
+  "change_password": {
+    "button": {
+      "change_password": "Change Your Password"
+    },
+    "title": "Change your password",
+    "label": {
+      "current_password": "Current password",
+      "new_password": "New password",
+      "re_new_password": "Re-type new password"
+    }
+  },
+  "forgot_password": {
+    "title": "Reset your password",
+    "label": {
+      "input_email": "Input your email"
+    },
+    "button": {
+      "get_email_confirm": "Get email confirm"
+    },
+    "message": {
+      "check_your_email": "Check your email for password reset link."
+    }
+  },
+  "rev_shared": {
+    "date_range_picker": {
+      "label": {
+        "start_date": "Start Date",
+        "end_date": "End Date"
+      },
+      "error": "The date format is incorrect !"
+    },
+    "button": {
+      "invite": "Invite",
+      "advance_search": "Advance Search",
+      "apply": "Apply"
+    },
+    "switch": {
+      "status": {
+        "on": "On",
+        "off": "Off"
+      }
+    },
+    "label": {
+      "birth_date": "Birth Date",
+      "select_country": "Select Country",
+      "select_region": "Select Region",
+      "time_zone": "Time zone",
+      "select_date": "Select Date Range"
+    },
+    "enums": {
+      "status": {
+        "user": {
+          "u_active": "ACTIVE",
+          "u_pending": "PENDING",
+          "u_suspended": "SUSPENDED",
+          "u_banned": "BANNED",
+          "u_rejected": "REJECTED",
+          "u_cancelled": "CANCELLED"
+        },
+        "partner": {
+          "p_active": "ACTIVE",
+          "p_pending": "PENDING",
+          "p_suspended": "SUSPENDED",
+          "p_banned": "BANNED",
+          "p_rejected": "REJECTED",
+          "p_cancelled": "CANCELLED"
+        },
+        "payment": {
+          "pending": "PENDING",
+          "reverted": "REVERTED",
+          "rejected": "REJECTED",
+          "finished": "FINISHED",
+          "cancelled": "CANCELLED",
+          "failed": "FAILED"
+        },
+        "order": {
+          "pending": "PENDING",
+          "finish": "FINISH",
+          "cancel": "CANCEL",
+          "rejected": "REJECTED",
+          "revert": "REVERT"
+        },
+        "transaction": {
+          "pending": "PENDING",
+          "finished": "FINISHED",
+          "cancelled": "CANCELLED",
+          "rejected": "REJECTED",
+          "revert": "REVERT",
+          "pending_admin_approval": "PENDING ADMIN APPROVAL"
+        },
+        "bill": {
+          "reverted": "REVERTED",
+          "failed": "FAILED",
+          "expired": "EXPIRED",
+          "pending": "PENDING",
+          "created": "CREATED",
+          "paid": "PAID",
+          "hold": "HOLD",
+          "closed": "CLOSED",
+          "not_enough_fund": "NOT ENOUGH FUND",
+          "confirmed": "CONFIRM"
+        }
+      },
+      "type": {
+        "transaction": {
+          "deposit": "Deposit",
+          "transfer": "Transfer",
+          "withdraw": "Withdraw"
+        },
+        "bill": {
+          "deposit": "Deposit",
+          "transfer": "Transfer",
+          "withdraw": "Withdraw"
+        }
+      }
+    },
+    "upload_avatar": {
+      "trigger_label": "Change avatar",
+      "choose_file": "Choose file",
+      "ok": "Ok"
+    },
+    "billing_card": {
+      "label": {
+        "id": "Id",
+        "bill_type": "Bill Type",
+        "owner_name": "Owner Name",
+        "currency": "Currency",
+        "tracking_id": "Tracking id",
+        "address": "Address",
+        "status": "Status",
+        "date_created": "Date created",
+        "date_updated": "Date updated",
+        "amount": "Amount",
+        "actual_amount": "Actual amount",
+        "transaction_fee": "Transaction fee"
+      }
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "popup": {
+      "button": {
+        "close": "Close"
+      }
+    },
+    "message": {
+      "empty_ewallet": "You don't have any wallet",
+      "empty_bill": "not found any bill",
+      "empty_transaction": "not found any transaction",
+      "password_recommend": "Password must be at least eight characters, should contain uppercase and lowercase characters, numbers, spaces, and special characters."
+    },
+    "transaction_card": {
+      "label": {
+        "transaction_id": "Transaction id",
+        "currency": "Currency",
+        "transaction_type": "Transaction type",
+        "receiver": "Receiver",
+        "fee": "Fee",
+        "amount": "Amount",
+        "status": "Status",
+        "date_created": "Date created",
+        "description": "Description"
+      }
+    },
+    "reset_password": {
+      "title": "Reset your password",
+      "label": {
+        "new_password": "New password",
+        "re_new_password": "Re-type new password"
+      },
+      "button": {
+        "reset_password": "Reset Password",
+        "back_to_home": "Back to home page"
+      }
+    },
+    "do_success": {
+      "label": "Back to homepage"
+    },
+    "placeholder": {
+      "password": "Password"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+type CompoundRecord {
+  id: ID!
+  ownerId: ID!
+  coinId: String!
+  type: CompoundType!
+  amount: Float
+  currentRate: String!
+  interestValue: Float
+  totalValue: Float!
+  status: CompoundStatus
+  createdAt: DateTime
+  updatedAt: DateTime
+}
+
+type CompoundRate {
+  id: ID!
+  coinId: ID!
+  type: CompoundType
+  value: Float!
+  setBy: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+enum CompoundType {
+  SUPPLY
+  BORROW
+}
+
+enum CompoundStatus {
+  STARTED
+  ENDED
+}

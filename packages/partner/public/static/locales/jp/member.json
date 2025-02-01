@@ -1,0 +1,22 @@
+{
+  "manage": {},
+  "user": {},
+  "activities": {},
+  "detail": {
+    "member_detail": {
+      "title": "メンバー詳細",
+      "label": {
+        "username": "ユーザー名",
+        "fullname": "名前",
+        "partner_id": "パートナーID",
+        "country": "国",
+        "gender": "性別",
+        "email": "E-メール",
+        "join_date": "登録日",
+        "birth_date": "生年月日",
+        "status": "ステータス",
+        "role": "役割"
+      }
+    }
+  }
+}

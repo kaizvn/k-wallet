@@ -1,0 +1,36 @@
+{
+  "manage": {},
+  "add_new": {
+    "add_button": "追加",
+    "reset_button": "リセット",
+    "add_success_message": "新規モデレーターを正常に追加しました",
+    "title": "新規モデレーター追加",
+    "username": "ユーザーネーム",
+    "username_placeholder": "ユーザーネーム",
+    "password": "パスワード",
+    "password_placeholder": "パスワード",
+    "email": "Eメール",
+    "email_placeholder": "Eメール",
+    "select_title": "タイトルを選択",
+    "first_name": "名",
+    "first_name_placeholder": "名",
+    "last_name": "氏",
+    "last_name_placeholder": "氏",
+    "birth_date": "生年月日"
+  },
+  "detail": {
+    "moderator_details": {
+      "title": "モデレーター詳細",
+      "label": {
+        "username": "ユーザーネーム",
+        "fullname": "氏名",
+        "gender": "性別",
+        "email": "Eメール",
+        "join_date": "参加日",
+        "birth_date": "生年月日",
+        "age": "年齢",
+        "status": "ステータス"
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "table": {
+    "body": {
+      "no_row": "No records to display",
+      "add": "Add",
+      "delete": "Delete",
+      "edit": "Edit",
+      "filter": "Filter",
+      "confirm": "Are you sure delete this row?",
+      "cancel": "Cancel",
+      "save": "Save"
+    },
+    "grouping": {
+      "placeholder": "Drag headers...",
+      "grouped_by": "Grouped By:"
+    },
+    "header": {
+      "action": "Actions"
+    },
+    "pagination": {
+      "of_text": "of",
+      "rows": "rows",
+      "row_per_page": "Rows per page:",
+      "first_page": "First Page",
+      "previous_page": "Previous Page",
+      "next_page": "Next Page",
+      "last_page": "Last Page"
+    },
+    "toolbar": {
+      "add_or_remove": "Add or remove columns",
+      "row_selected": "row(s) selected",
+      "show_columns": "Show Columns",
+      "export": "Export",
+      "export_as": "Export as CSV",
+      "search": "Search"
+    },
+    "next_text": "Next",
+    "previous_text": "Previous",
+    "loading_text": "Loading...",
+    "no_rows_text": "No rows found",
+    "page_text": "Page",
+    "rows_text": "rows",
+    "of_text": "of",
+    "member": {
+      "manage": {
+        "title": "Members Management",
+        "header": {
+          "member_name": "Member Name",
+          "email": "Email",
+          "role": "Role",
+          "join_date": "Join Date",
+          "owner": "Owner",
+          "status": "Status",
+          "action": "Actions"
+        },
+        "placeholder_search": "Search name or email of members"
+      }
+    },
+    "transaction": {
+      "payment": {
+        "title": "External Transactions",
+        "header": {
+          "payment_date": "Payment Date",
+          "status": "Status",
+          "currency": "Currency",
+          "hash": "Hash",
+          "amount": "Amount",
+          "receiver": "Receiver",
+          "fee": "Fee",
+          "bill": "Bill",
+          "resend_callback": "Resend callback"
+        },
+        "placeholder_search": "Search by hash",
+        "deposit": "Deposit",
+        "withdraw": "Withdraw",
+        "re_send": "Re Send"
+      },
+      "transactions": {
+        "title": "Internal Transactions",
+        "header": {
+          "payment_date": "Payment Date",
+          "status": "Status",
+          "currency": "Currency",
+          "hash": "Hash",
+          "amount": "Amount",
+          "from": "From",
+          "to": "To",
+          "actions": "Actions"
+        },
+        "placeholder_search": "Search name of senders or recipients",
+        "transfer": "Transfer"
+      },
+
+      "billing": {
+        "title": "Billings",
+        "header": {
+          "owner_name": "Owner Name",
+          "address": "Address",
+          "status": "Status",
+          "currency": "Currency",
+          "amount": "Amount",
+          "actual_amount": "Actual Amount",
+          "payment_date": "Payment Date",
+          "expired_date": "Expired Date"
+        },
+        "placeholder_search": "Search owner name or address"
+      }
+    },
+    "invoice": {
+      "header": {
+        "date": "Date Created",
+        "invoice": "Invoice #",
+        "due_date": "Due Date",
+        "client": "Client",
+        "status": "Status",
+        "amount": "Amount",
+        "actions": "Actions"
+      },
+      "placeholder_search": "Search invoice code"
+    },
+    "invoice_client": {
+      "header": {
+        "no": "Client No.",
+        "name": "Client Name",
+        "email": "Client Email",
+        "actions": "Actions"
+      },
+      "placeholder_search": "Search client name or email"
+    }
+  }
+}

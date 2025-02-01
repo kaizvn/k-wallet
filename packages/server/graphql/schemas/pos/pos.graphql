@@ -1,0 +1,55 @@
+type Product {
+  id: ID
+  name: String
+  slug: String
+  date_created: DateTime
+  status: String
+  feature: Boolean
+  sku: String
+  price: Float
+  regular_price: Float
+  date_on_sale_from: DateTime
+  date_on_sale_to: DateTime
+  stock_status: String
+  images: [ProductImage]
+}
+
+type ProductImage {
+  name: String
+  src: String
+}
+
+type ProductOrder {
+  id: ID
+  parent_id: ID
+  number: ID
+  order_key: String
+  status: String
+  currency: String
+  date_created: DateTime
+  discount_total: Float
+  total: Float
+  customer_id: ID
+  customer_note: String
+  payment_method: String
+  transaction_id: String
+  date_paid: DateTime
+  line_items: [LineItem!]!
+}
+
+type LineItem {
+  id: ID
+  name: String
+  product_id: ID
+  variation_id: ID
+  quantity: Int
+  subtotal: Float
+  total: Float
+  sku: String
+  price: Float
+}
+
+type Query {
+  get_all_products: [Product!]!
+  get_all_products_orders: [ProductOrder!]!
+}

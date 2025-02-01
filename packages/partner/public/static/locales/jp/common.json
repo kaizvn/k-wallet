@@ -1,0 +1,242 @@
+{
+  "not_expired_yet": "まだ有効期限切れではないです！",
+  "save_success": "正常に保存されました",
+  "profile": {
+    "title": {
+      "username": "ユーザーネーム",
+      "fullname": "名前",
+      "email": "E-メール",
+      "date_of_birth": "生年月日",
+      "status": "ステータス",
+      "your_profile": "アカウント"
+    },
+    "button": {
+      "edit": "設定",
+      "change_password": "パスワード変更"
+    }
+  },
+  "edit_profile": {
+    "title": "パートナープロフィールの編集",
+    "label": {
+      "partner_name": "名前",
+      "email": "E-メール"
+    },
+    "button": {
+      "save": "保存",
+      "reset": "再設定する"
+    }
+  },
+  "change_password": {
+    "button": {
+      "change_password": "パスワードを変更する"
+    },
+    "title": "パスワードを変更する",
+    "label": {
+      "current_password": "現在のパスワード",
+      "new_password": "新しいパスワード",
+      "re_new_password": "新しいパスワード（再入力）"
+    }
+  },
+  "forgot_password": {
+    "title": "パスワードを再設定する",
+    "label": {
+      "input_email": "E-メールを入力してください"
+    },
+    "button": {
+      "get_email_confirm": "E-メール認証を完了してください"
+    },
+    "message": {
+      "check_your_email": "パスワード再設定用のリンクをE-メールに送りました。"
+    }
+  },
+  "rev_shared": {
+    "date_range_picker": {
+      "label": {
+        "start_date": "開始日",
+        "end_date": "終了日",
+        "to": "へ"
+      },
+      "error": "データ形式が誤っております!"
+    },
+    "button": {
+      "invite": "招待",
+      "advance_search": "詳細検索",
+      "apply": "次へ"
+    },
+    "switch": {
+      "status": {
+        "on": "ON",
+        "off": "OFF"
+      }
+    },
+    "label": {
+      "birth_date": "生年月日",
+      "select_country": "国の選択",
+      "select_region": "地域の選択",
+      "time_zone": "タイムゾーン",
+      "select_timezone": "タイムゾーンの選択",
+      "service_status": "サービスステータス",
+      "select_date": "データ範囲を選択"
+    },
+    "enums": {
+      "user": {
+        "u_active": "アクティブ",
+        "u_pending": "保留",
+        "u_suspended": "停止",
+        "u_banned": "アカウント停止",
+        "u_rejected": "返金",
+        "u_cancelled": "キャンセル"
+      },
+      "partner": {
+        "p_active": "アクティブ",
+        "p_pending": "保留",
+        "p_suspended": "停止",
+        "p_banned": "アカウント停止",
+        "p_rejected": "返金",
+        "p_cancelled": "キャンセル"
+      },
+      "actions": {
+        "p_ban": "アカウント停止",
+        "p_unban": "アカウント停止解除",
+        "p_approve": "承認",
+        "p_reject": "返金",
+        "p_cancelled": "キャンセル",
+        "p_copy_invitation_link": "招待リンクをコピーしてください",
+        "p_cancel_invitation": "招待をキャンセル",
+        "p_resend": "メールの再送信",
+        "u_ban": "アカウント停止",
+        "u_unban": "アカウント停止解除",
+        "u_approve": "承認",
+        "u_reject": "返金",
+        "u_copy_invitation_link": "招待リンクをコピーしてください",
+        "u_cancel_invitation": "招待をキャンセル",
+        "u_resend": "メールを再送信",
+        "transaction_approve_by_partner": "承認",
+        "transaction_reject_by_partner": "返金",
+        "tx_approve": "承認",
+        "tx_reject": "返金",
+        "tx_manual": "手動"
+      },
+      "status": {
+        "user": {
+          "u_active": "アクティブ",
+          "u_pending": "保留",
+          "u_suspended": "停止",
+          "u_banned": "アカウント停止",
+          "u_rejected": "返金",
+          "u_cancelled": "キャンセル"
+        },
+        "partner": {
+          "p_active": "アクティブ",
+          "p_pending": "保留",
+          "p_suspended": "SUSPENDED-jp",
+          "p_banned": "BANNED-jp",
+          "p_rejected": "REJECTED-jp",
+          "p_cancelled": "CANCELLED-jp"
+        },
+        "payment": {
+          "pending": "保留中",
+          "reverted": "戻す",
+          "rejected": "返金",
+          "finished": "終了",
+          "cancelled": "キャンセル",
+          "failed": "失敗"
+        },
+        "order": {
+          "pending": "保留中",
+          "finish": "終了",
+          "cancel": "キャンセル",
+          "rejected": "終了",
+          "revert": "戻す"
+        },
+        "transaction": {
+          "pending": "保留",
+          "finished": "終了",
+          "cancelled": "キャンセル",
+          "rejected": "返金",
+          "revert": "戻す",
+          "pending_partner_approval": "パートナ権限（保留中）",
+          "pending_admin_approval": "管理者権限（保留中）"
+        },
+        "bill": {
+          "reverted": "元に戻す",
+          "failed": "終了",
+          "expired": "有効期限切れ",
+          "pending": "保留中",
+          "created": "作成",
+          "paid": "支払済み",
+          "hold": "保有中",
+          "closed": "終了",
+          "not_enough_fund": "残高不足",
+          "confirmed": "承認"
+        },
+        "invoice": {
+          "overdue": "期限切れ",
+          "open": "開いた",
+          "confirmed": "確認済み",
+          "cancelled": "キャンセル"
+        }
+      },
+      "type": {
+        "transaction": {
+          "deposit": "入金",
+          "transfer": "振替",
+          "withdraw": "出金"
+        },
+        "bill": {
+          "deposit": "入金",
+          "transfer": "振替",
+          "withdraw": "出金"
+        }
+      }
+    },
+    "ewallet": {
+      "id": "ID",
+      "owner": "オーナー"
+    },
+    "upload_avatar": {
+      "trigger_label": "アバター変更",
+      "choose_file": "ファイルの選択",
+      "ok": "OK"
+    },
+    "billing_card": {
+      "label": {
+        "id": "ID",
+        "bill_type": "請求書タイプ",
+        "owner_name": "オーナー名",
+        "currency": "通貨",
+        "tracking_id": "トラッキングID",
+        "address": "アドレス",
+        "status": "ステータス",
+        "date_created": "日付作成",
+        "date_updated": "日付更新",
+        "amount": "額",
+        "actual_amount": "実際の額",
+        "transaction_fee": "トランザクション手数料"
+      }
+    },
+    "message": {
+      "empty_ewallet": "ウォレットを保有しておりません",
+      "empty_bill": "請求書が見つかりませんでした",
+      "empty_transaction": "トランザクションが見つかりませんでした",
+      "password_recommend": "パスワードは8文字以上である必要があります。（大文字、小文字、英語、数字、スペース、記号を入力することでより強固なパスワードになります。）"
+    },
+    "reset_password": {
+      "title": "パスワードを再設定",
+      "label": {
+        "new_password": "新しいパスワード",
+        "re_new_password": "新しいパスワード（再入力）"
+      },
+      "button": {
+        "reset_password": "パスワードをリセット",
+        "back_to_home": "ホームに戻る"
+      }
+    },
+    "do_success": {
+      "label": "ホームに戻る"
+    },
+    "placeholder": {
+      "password": "パスワード"
+    }
+  }
+}

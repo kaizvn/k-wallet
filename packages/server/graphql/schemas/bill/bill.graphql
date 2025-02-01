@@ -1,0 +1,57 @@
+type Bill {
+  id: ID!
+  address: String!
+  owner: EWalletOwner!
+  transaction: Transaction!
+  trackingId: String
+  coin: Coin!
+  type: BillType!
+  amount: Float!
+  actualAmount: Float
+  status: BillStatus!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  expiredAt: DateTime
+  fee: Float
+}
+
+type Query {
+  get_required_approval_bills: [Bill!]!
+  get_withdraw_requests: [Bill!]!
+  get_bills: [Bill!]!
+  get_bill(id: ID!): Bill!
+  get_pending_bills: [Bill!]!
+  get_quick_filter_bills(filter: FilterTable!): FilterBillResults!
+}
+
+type Mutation {
+  approve_bill(id: ID!): Bill!
+  revert_bill(id: ID!): Bill!
+
+  create_withdraw_request(
+    trackingId: String
+    recipientAddress: String!
+    withdrawAmount: Float!
+    coinId: String!
+  ): Bill!
+
+  approve_withdraw_request(id: ID!): Bill!
+  reject_withdraw_request(id: ID!): Bill!
+}
+
+enum BillStatus {
+  FAILED
+  EXPIRED
+  PENDING
+  CREATED
+  PAID
+  HOLD
+  CLOSED
+  NOT_ENOUGH_FUND
+  CONFIRMED
+}
+
+enum BillType {
+  BILL_DEPOSIT
+  BILL_WITHDRAW
+}

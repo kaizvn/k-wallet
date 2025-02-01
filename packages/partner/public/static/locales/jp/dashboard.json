@@ -1,0 +1,14 @@
+{
+  "card_detail": {
+    "title": "マネージパートナーとしてログインする",
+    "username": "ユーザー名",
+    "valid_from": "有効",
+    "status": "ステータス"
+  },
+  "card_qr_code": {
+    "title": "支払いをスキャンする"
+  },
+  "label": {
+    "empty_wallet": "ウォレットを保有しておりません"
+  }
+}

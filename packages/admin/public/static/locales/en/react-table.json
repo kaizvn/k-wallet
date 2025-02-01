@@ -1,0 +1,192 @@
+{
+  "add": "Add",
+  "add_new_wallet": "Add new wallet",
+  "table": {
+    "body": {
+      "no_row": "No records to display",
+      "add": "Add",
+      "delete": "Delete",
+      "edit": "Edit",
+      "filter": "Filter",
+      "confirm": "Are you sure delete this row?",
+      "cancel": "Cancel",
+      "save": "Save"
+    },
+    "grouping": {
+      "placeholder": "Drag headers...",
+      "grouped_by": "Grouped By:"
+    },
+    "header": {
+      "action": "Actions"
+    },
+    "pagination": {
+      "of_text": "of",
+      "rows": "rows",
+      "row_per_page": "Rows per page:",
+      "first_page": "First Page",
+      "previous_page": "Previous Page",
+      "next_page": "Next Page",
+      "last_page": "Last Page"
+    },
+    "toolbar": {
+      "add_or_remove": "Add or remove columns",
+      "row_selected": "row(s) selected",
+      "show_columns": "Show Columns",
+      "export": "Export",
+      "export_as": "Export as CSV",
+      "search": "Search"
+    },
+    "next_text": "Next",
+    "previous_text": "Previous",
+    "loading_text": "Loading...",
+    "no_rows_text": "No rows found",
+    "page_text": "Page",
+    "rows_text": "rows",
+    "of_text": "of",
+    "partner_manage": {
+      "title": "Partners Management",
+      "header": {
+        "partner": "Partner",
+        "join_date": "Join Date",
+        "owner": "Owner",
+        "email": "Email",
+        "status": "Status"
+      },
+      "placeholder_search": "Search name or email"
+    },
+    "partner_user": {
+      "title": "Partners Users Management",
+      "header": {
+        "fullname": "Full Name",
+        "email": "Email",
+        "partner_name": "Partner Name",
+        "role": "Role",
+        "join_date": "Join Date",
+        "status": "Status"
+      },
+      "placeholder_search": "Search name or email of partner users"
+    },
+    "moderator_manage": {
+      "title": "Moderator Management",
+      "header": {
+        "fullname": "Full Name",
+        "email": "Email",
+        "date_create": "Date Create",
+        "status": "Status",
+        "action": "Actions"
+      },
+      "placeholder_search": "Search full name or email"
+    },
+    "user_manage": {
+      "title": "User Management",
+      "header": {
+        "fullname": "Full Name",
+        "email": "Email",
+        "date_create": "Date Create",
+        "status": "Status",
+        "action": "Actions"
+      },
+      "placeholder_search": "Search full name or email"
+    },
+    "transaction_wallets": {
+      "placeholder_search": "Search name of owners or wallet's address ",
+      "message_empty_ewallet": "No E-wallets found !!"
+    },
+    "transaction_billing": {
+      "title": "Billings",
+      "header": {
+        "owner_name": "Owner Name",
+        "address": "Address",
+        "status": "Status",
+        "currency": "Currency",
+        "amount": "Amount",
+        "actual_amount": "Actual amount",
+        "payment_date": "Created",
+        "expired_date": "Expired"
+      },
+      "placeholder_search": "Search owner name or address"
+    },
+    "transactions_manage": {
+      "title": "Internals Transactions",
+      "header": {
+        "payment_date": "Payment Date",
+        "status": "Status",
+        "currency": "Currency",
+        "hash": "Hash",
+        "amount": "Amount",
+        "from": "From",
+        "to": "To",
+        "actions": "Actions"
+      },
+      "placeholder_search": "Search name of senders or recipients",
+      "transfer": "Transfer",
+      "manual": {
+        "title": "Manual Transaction",
+        "label": "Transaction hash",
+        "submit": "Submit"
+      }
+    },
+    "coins_manage": {
+      "title": "Coin Management",
+      "header": {
+        "id": "Id",
+        "name": "Name",
+        "symbol": "Symbol",
+        "logo": "Logo",
+        "status": "Status",
+        "support_compound": "Support Compound",
+        "fee_percentage": "Fee %",
+        "fee_fixed": "Fee Fixed",
+        "minimum_withdraw": "Minimum Withdraw",
+        "decimals": "Decimals",
+        "network": "Network Type",
+        "support_PF": "Support PF",
+        "date_create": "Date Create",
+        "contract_address": "Contract Address",
+        "actions": "Actions"
+      },
+      "placeholder_search": "Search name or symbol",
+      "add_new_coin": "Add New Coin"
+    },
+    "payments_manage": {
+      "title": "External Transactions",
+      "header": {
+        "payment_date": "Payment Date",
+        "status": "Status",
+        "currency": "Currency",
+        "hash": "Hash",
+        "amount": "Amount",
+        "receiver": "Receiver",
+        "fee": "Fee",
+        "bill": "Bill"
+      },
+      "placeholder_search": "Search by hash"
+    },
+    "transactions_pending_manage": {
+      "title": "Pending Approval Transactions",
+      "header": {
+        "payment_date": "Payment Date",
+        "status": "Status",
+        "currency": "Currency",
+        "hash": "Hash",
+        "amount": "Amount",
+        "from": "From",
+        "to": "To"
+      },
+      "placeholder_search": "Search name of senders or recipients"
+    },
+    "members_management": {
+      "title": "Members Management",
+      "header": {
+        "id": "ID",
+        "member_name": "Member Name",
+        "member_username": "Member Username",
+        "partner_id": "Partner Id",
+        "join_date": "Join Date",
+        "email": "Email",
+        "role": "Role",
+        "status": "Status"
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "login": {
+    "title": "USER LOGIN",
+    "button": {
+      "login": "Login",
+      "register": "Register"
+    },
+    "label": {
+      "remember_me": "Remember Me",
+      "forgot_password": "Forgot your password?",
+      "copyright": "2019 RevPayment",
+      "privacy_policy": "Privacy Policy",
+      "contact": "Contact",
+      "connect_with": "Or connect with",
+      "sign_up": "Don't have an account? Sign Up"
+    },
+    "placeholder": {
+      "username": "Username",
+      "password": "Password",
+      "auth_code": "Authen Code"
+    }
+  },
+  "register": {
+    "title": "SIGN UP",
+    "placeholder": {
+      "username": "User Name",
+      "password": "Password",
+      "email": "Email",
+      "mcc_code": "e.g: +1",
+      "phone_number": "Phone Number",
+      "firstname": "First Name",
+      "lastname": "Last Name",
+      "id_passport": "ID No. / Passport No."
+    },
+    "button": {
+      "register": "Register"
+    },
+    "label": {
+      "label_normal": {
+        "terms": "By clicking 'Register' I agree the",
+        "already_account": "Already have an account?"
+      },
+      "label_link": {
+        "login": "Login",
+        "terms": "Terms Of Service"
+      },
+      "username": "User Name",
+      "password": "Password",
+      "email": "Email",
+      "mcc_code": "Mcc code",
+      "phone_number": "Phone Number",
+      "firstname": "First Name",
+      "lastname": "Last Name",
+      "id_passport": "ID No. / Passport No."
+    }
+  },
+  "register_success": {
+    "title": "Reservation submitted!",
+    "label": {
+      "send_confirmation": "We will send confirmation email to you soon.",
+      "back_to_home": "Back to home page",
+      "click_here": "click here"
+    }
+  }
+}

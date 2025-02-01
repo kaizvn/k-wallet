@@ -1,0 +1,89 @@
+{
+  "user_dashboard": {
+    "title": "ユーザーダッシュボード",
+    "card_detail": {
+      "username": "ユーザーネーム",
+      "valid_from": "から有効",
+      "status": "ステータス",
+      "button": {
+        "logout": "ログアウト"
+      }
+    },
+    "card_qr_code": {
+      "title": "支払いをスキャンして下さい"
+    },
+    "card_wallets": {
+      "title": "ウォレット",
+      "button": {
+        "view_all": "全て見る"
+      }
+    },
+    "pending_warning": {
+      "verified_yet": "アカウントはまだ有効ではありません。",
+      "please_go_to": "へ進む",
+      "diro": "Diro",
+      "submit_document": "書類を許可する"
+    }
+  },
+  "recent_transactions": {
+    "tab_label": {
+      "transactions": "トランザクション",
+      "payments": "支払い"
+    },
+    "title": {
+      "fixed_title": "最近の",
+      "toggle_title": {
+        "transactions": "取引",
+        "payments": "支払い"
+      }
+    },
+    "button": {
+      "view_all_transaction": "全て見る",
+      "view_all_payment": "全て見る"
+    },
+    "card": {
+      "title": {
+        "paid": "支払済",
+        "received": "受取済"
+      },
+      "label": {
+        "payment_time": "支払時間",
+        "to": "へ",
+        "from": "から",
+        "receiver": "受取人",
+        "hash": "ハッシュ"
+      },
+      "button": {
+        "view_detail": "詳細を見る"
+      }
+    },
+    "hover": {
+      "eth": "イーサスキャンで見る",
+      "btc": "ブロックチェーンで見る"
+    }
+  },
+  "recent_billings": {
+    "title": "最近の請求",
+    "button": {
+      "view_all": "全て見る"
+    },
+    "card": {
+      "title": {
+        "deposit": "入金",
+        "withdraw": "出金"
+      },
+      "label": {
+        "owner": "オーナー",
+        "bill_id": "請求ID",
+        "tracking_id": "追跡ID",
+        "address": "アドレス",
+        "status": "ステータス",
+        "date_created": "作成日",
+        "date_updated": "更新日",
+        "amount": "数量",
+        "actual_amount": "実際の数量",
+        "transaction_fee": "取引手数料"
+      }
+    }
+  }
+}

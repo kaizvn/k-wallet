@@ -1,0 +1,11 @@
+type InvoiceItem {
+  id: ID!
+  name: String!
+  description: String
+  quantity: Float!
+  price: Float!
+  amount: Float!
+  invoice: Invoice
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}

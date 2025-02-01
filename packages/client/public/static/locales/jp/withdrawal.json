@@ -1,0 +1,50 @@
+{
+  "title": "Withdrawal-jp",
+  "instruction": {
+    "title": "Important Withdrawal Instruction-jp",
+    "text": {},
+    "detail": {
+      "time": {
+        "title": "Reflection time-jp",
+        "content": "within 24 hours-jp"
+      },
+      "limit": {
+        "title": "Maximum remittance amount-jp",
+        "content": {
+          "unit_character": "*",
+          "day": "day-jp",
+          "unit_text": "BTC, ETH, etc..-jp"
+        }
+      },
+      "fee": {
+        "title": "Fees-jp",
+        "content": "Free-jp"
+      }
+    }
+  },
+  "amount": {
+    "title": "Withdrawal Amount-jp",
+    "label": {
+      "available": "Available-jp",
+      "remittance_amount": "Remittance Amount-jp"
+    }
+  },
+  "recipient": {
+    "title": "Recipient's Wallet Address-jp",
+    "content": "Please verify the wallet address. We cannot refund an incorrect withdrawal !!-jp"
+  },
+  "label": {
+    "tracking_id": "Tracking Id-jp",
+    "deposit_address": {
+      "label_normal": "Address-jp",
+      "label_bold": "Deposit-jp"
+    },
+    "payment_completed": "Payment Completed !-jp"
+  },
+  "button": {
+    "back": "Back-jp",
+    "withdraw": "Withdraw-jp",
+    "cancel": "Cancel-jp",
+    "confirm": "Are you sure?-jp"
+  }
+}

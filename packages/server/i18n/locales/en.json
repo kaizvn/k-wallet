@@ -1,0 +1,401 @@
+{
+  "util": {
+    "invalid_email": "Email is invalid",
+    "email_existed": "Email already exists"
+  },
+  "invoice": {
+    "client": {
+      "not_found": "Invoice Client not found"
+    }
+  },
+  "user": {
+    "mutation": {
+      "error": {
+        "existed": {
+          "phone_number": "This phone number existed in our system.",
+          "email": "This email was taken.",
+          "username": "This username was taken."
+        },
+        "incorrect": {
+          "birthdate": "The birth date is invalid format",
+          "old_password": "Incorrect old password",
+          "password": "Incorrect password",
+          "authen_code": "Incorrect authen code"
+        },
+        "not_found": {
+          "user": "Cannot find User by id"
+        }
+      }
+    },
+    "query": {
+      "error": {
+        "incorrect": {
+          "login": "Incorrect username or password."
+        }
+      }
+    }
+  },
+  "partner": {
+    "mutation": {
+      "error": {
+        "not_found": {
+          "partner": "Cannot find Partner or Partner is not pending any more."
+        }
+      }
+    },
+    "query": {}
+  },
+  "partnerUser": {
+    "mutation": {
+      "error": {
+        "incorrect": {
+          "old_password": "Incorrect old password",
+          "register_partner_member": {
+            "birthdate": "Birthdate is not valid",
+            "email": "Email is not matched with invitation"
+          },
+          "register_partner_user": {
+            "birthdate": "Birthdate is not valid",
+            "account": "This account is not valid."
+          }
+        },
+        "existed": {
+          "register_partner_member": {
+            "partner": "Partner does not exist or suspended."
+          },
+          "register_partner_user": {
+            "email": "This email was taken.",
+            "username": "This username was taken.",
+            "partner_id": "This partner ID was taken."
+          },
+          "invite_member": {
+            "user": "this user was existed or banned."
+          }
+        },
+        "not_exist": {
+          "register_partner_member": {
+            "partner": "Partner does not exist or suspended."
+          },
+          "register_partner_user": {
+            "email": "The email does not match invitation.",
+            "partner": "Partner does not exist or suspended."
+          },
+          "invite_member": {
+            "partner": "Partner does not exist."
+          }
+        },
+        "not_found": {
+          "member": "Cannot find Member",
+          "user": "There is no User with id"
+        },
+        "missing_param": {
+          "partner_id": "Missing partner ID to register."
+        }
+      }
+    },
+    "query": {
+      "error": {
+        "incorrect": {
+          "login": "Incorrect username or password."
+        },
+        "action": {
+          "pending_approval": "Your account is pending approval !",
+          "banned": "This user is banned!"
+        },
+        "not_found": {
+          "partner": "No partner id provided."
+        },
+        "permission": "Permission denied!"
+      }
+    }
+  },
+  "sysUser": {
+    "mutation": {
+      "error": {
+        "incorrect": {
+          "old_password": "Incorrect old password"
+        },
+        "action": {
+          "user": {
+            "existed": "This user existed!",
+            "banned": "This user is banned!",
+            "rejected": "This user is rejected!"
+          }
+        },
+        "existed": {
+          "email": "This email is existed."
+        },
+        "not_found": {
+          "partner_by_id": "There is no PartnerUser with id",
+          "user_by_id": "There is no User with id"
+        },
+        "can_not_reject": "Can not reject this account"
+      }
+    },
+    "query": {
+      "error": {
+        "incorrect": {
+          "login": "Incorrect username or password."
+        }
+      }
+    }
+  },
+  "bill": {
+    "mutation": {
+      "error": {
+        "not_exist": {
+          "approve_withdraw": "bill not exist or not pending"
+        },
+        "fail_label": {
+          "deposit": "deposit fail:",
+          "withdraw": "withdraw fail:"
+        },
+        "message": {
+          "approve_bill": "bill is not PAID",
+          "revert_bill": "bill is not PAID",
+          "create_withdraw_request": "not enough balance",
+          "create_withdraw_bill": "not enough balance",
+          "reject_withdraw_request": "non-existed bill",
+          "reached_withdrawal_limit": "you have reached withdrawal limit",
+          "transaction_being_processed": "Please wait! Your transaction is being processed"
+        }
+      }
+    }
+  },
+  "ewallet": {
+    "mutation": {
+      "error": {
+        "missing_param": {
+          "user_id": "missing userId parameter"
+        },
+        "permission": {
+          "update_user_ewallet": "You do not have permission to do this action.",
+          "update_partner_ewallet": "You do not have permission to do this action."
+        },
+        "not_found": {
+          "ewallet": "Cannot find Ewallet"
+        }
+      }
+    },
+    "query": {
+      "error": {
+        "not_found_wallet_key": "Not found wallet key.",
+        "not_found_wallet_address": "Not found wallet address."
+      }
+    }
+  },
+  "heiau": {
+    "mutation": {
+      "error": {
+        "message": {
+          "pay_heiau": {
+            "no_ewallet": "you have no ewallet",
+            "not_enough_balance": "not enough balance"
+          },
+          "send_heiau": {
+            "no_ewallet": "you have no ewallet",
+            "not_enough_balance": "not enough balance"
+          }
+        },
+        "not_exist": {
+          "pay_heiau": "receiver does not exist",
+          "send_heiau": "receiver does not exist",
+          "topup_heiau_admin": "receiver does not exist"
+        }
+      }
+    }
+  },
+  "resetPassword": {
+    "mutation": {
+      "error": {
+        "not_exist": "Email does not exist !"
+      }
+    },
+    "query": {
+      "error": {
+        "invalid": "Token is invalid"
+      }
+    }
+  },
+  "setting": {
+    "mutation": {
+      "error": {
+        "invalid": {
+          "timezone_partner": "Timezone is not valid.",
+          "timezone_user": "Timezone is not valid."
+        },
+        "transfer_limit": "Limit transfer per day must be a positive number.",
+        "message": "Limit transfer per day must be less than general limit! Current limit: "
+      }
+    }
+  },
+  "transaction": {
+    "mutation": {
+      "error": {
+        "message": {
+          "pay": {
+            "no_wallet": "you have no wallet",
+            "not_enough_balance": "not enough balance",
+            "receiver_not_exist": "receiver does not exist"
+          },
+          "send": {
+            "no_wallet": "you have no wallet",
+            "not_enough_balance": "not enough balance",
+            "receiver_not_exist": "receiver does not exist"
+          },
+          "address_processed": "this address is being processed",
+          "amount": "amount must be larger than 0.",
+          "coin_not_found": "Not found any coin",
+          "not_has_ewallet": "This account does not has wallet",
+          "recipient_invalid": "Recipient address is not valid",
+          "insufficient_balance": "insufficient balance",
+          "withdrawal_limit_reached": "Withdrawal limit reached! Please wait for approval",
+          "cannot_transfer_addresses": "Cannot transfer to your addresses, please check your address or contact admin.",
+          "withdraw": {
+            "under_minimum_value": "Cannot withdraw under minimum value"
+          }
+        },
+        "not_exist": {
+          "set_revert_delivery": "Transaction id does not exist or waiting to delivery.",
+          "set_is_delivery": "Transaction id does not exist or completed.",
+          "pay": "receiver does not exist",
+          "send": "receiver does not exist"
+        },
+        "fail_label": {
+          "deposit": "deposit fail:"
+        },
+        "invalid": {
+          "approve_pending_transaction_by_partner": "Invalid Transaction",
+          "approve_pending_transaction_by_admin": "Invalid Transaction",
+          "pending_approval_transaction": "Invalid Transaction",
+          "tracking_id": "Invalid tracking id",
+          "hash": "Invalid hash"
+        },
+        "not_found": {
+          "address": "Can't find this address",
+          "ewallet": "Can't find this ewallet",
+          "wallet_key": "Can't find the wallet key",
+          "user": "Can't find this user",
+          "transaction": "Cannot find Transaction"
+        }
+      }
+    }
+  },
+  "passport": {
+    "not_found": {
+      "google_user": "Not find user",
+      "facebook_user": "Not find user"
+    }
+  },
+  "services": {
+    "base": {
+      "transfer_coin": {
+        "not_support_yet": "is not support yet.",
+        "cannot_find_primary_key": "Cannot find private key for this address"
+      }
+    },
+    "crypto_libs": {
+      "get_by_coin_id": {
+        "not_support": "System does not support",
+        "not_avaliable": "yet or does not available at this time."
+      }
+    },
+    "mail": {
+      "user_registration": {
+        "subject": "[RevPayment] Your registration at revpayment.io is successful"
+      },
+      "reset_password": {
+        "subject": "[RevPayment] Reset your account password at revpayment.io"
+      },
+      "owner_registration": {
+        "subject": "[RevPayment] Your registration at revpayment.io is successful"
+      },
+      "member_registration": {
+        "mail1": {
+          "subject": "[RevPayment] New member registered to your partner"
+        },
+        "mail2": {
+          "subject1": "[RevPayment] Your registration to",
+          "subject2": "is successful"
+        }
+      },
+      "deposit_success": {
+        "subject": "[RevPayment] New deposit notification"
+      },
+      "withdraw_success": {
+        "subject": "[RevPayment] New withdraw notification"
+      },
+      "transfer_success": {
+        "mail1": {
+          "subject": "[RevPayment] New transfer sent"
+        },
+        "mail2": {
+          "subject": "[RevPayment] New transfer received"
+        }
+      },
+      "invoice_create": {
+        "subject": "[RevPayment] New invoice create"
+      },
+      "invoice_overdue": {
+        "subject": "[RevPayment] Overdue invoice"
+      }
+    },
+    "coin_libs": {
+      "btc": {
+        "transfer_coin": "amount is empty",
+        "transfer_to_withdraw": "From address is empty."
+      },
+      "eth": {
+        "transfer_coin": "amount is empty",
+        "get_deposit_account": "does not exist!",
+        "transfer_to_withdraw": "From address is empty."
+      },
+      "heiau": {},
+      "xrp": {}
+    }
+  },
+  "routers": {
+    "apis": {
+      "callback_passport_login_social": {
+        "not_setting_email": "Your Facebook account is not setting email. Please setting and login again",
+        "email_not_exists": "Email does not exists"
+      },
+      "diro_callback": {
+        "subject": "[RevPayment] Your account at revpayment.io is verified!"
+      },
+      "signout": {
+        "message": "Sign out successfully."
+      },
+      "refresh_token": {
+        "message": "the token isn't valid"
+      }
+    }
+  },
+  "utils": {
+    "not_found": {
+      "user": "User does not exist",
+      "partner": "Partner does not exist",
+      "users_of_partner": "Can not find any User",
+      "timezone": "Can not find timezone"
+    },
+    "error": {
+      "out_of_limit_date_range": "Cannot load data from a date range greater than {{limitDays}} days!"
+    },
+    "invalid": {
+      "from_date_and_to_date": "fromDate and toDate are not valid!"
+    }
+  },
+  "coin": {
+    "mutation": {
+      "error": {
+        "not_found": "The coin is not found!",
+        "existed": "The coin is existed!"
+      }
+    },
+    "query": {
+      "error": {
+        "not_found": "The coin is not found!"
+      }
+    }
+  }
+}

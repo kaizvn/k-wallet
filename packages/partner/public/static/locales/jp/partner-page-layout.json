@@ -1,0 +1,133 @@
+{
+  "menu": {
+    "partner_owner": {
+      "dashboard": {
+        "label": "ダッシュボード",
+        "sub_menu": {}
+      },
+      "member": {
+        "label": "メンバー",
+        "sub_menu": {
+          "manage_member": "メンバーを管理",
+          "users": "ユーザー",
+          "activity": "利用状況"
+        }
+      },
+      "transaction": {
+        "label": "トランザクション",
+        "sub_menu": {
+          "deposit": "入金",
+          "withdraw": "出金",
+          "transactions": "トランザクション",
+          "virtual_wallets": "バーチャルウォレット",
+          "billings": "請求一覧",
+          "pending_transactions": "保留中のトランザクション"
+        }
+      },
+      "invoice": {
+        "label": "請求書発行"
+      },
+      "setting": {
+        "label": "設定",
+        "sub_menu": {
+          "partner_setting": "パートナー設定",
+          "account_setting": "アカウント設定",
+          "permissions": "権限"
+        }
+      },
+      "logout": {
+        "label": "ログアウト",
+        "sub_menu": {}
+      }
+    },
+    "partner_member": {
+      "dashboard": {
+        "label": "ダッシュボード",
+        "sub_menu": {}
+      },
+      "order": {
+        "label": "オーダー",
+        "sub_menu": {}
+      },
+      "member": {
+        "label": "メンバー",
+        "sub_menu": {
+          "manage_member": "メンバー管理",
+          "users": "ユーザー",
+          "activity": "利用状況"
+        }
+      },
+      "transaction": {
+        "label": "トランザクション",
+        "sub_menu": {
+          "deposit": "入金",
+          "transactions": "トランザクション",
+          "billings": "請求書一覧"
+        }
+      },
+      "setting": {
+        "label": "設定",
+        "sub_menu": {
+          "account_setting": "アカウント設定",
+          "permissions": "権限"
+        }
+      },
+      "logout": {
+        "label": "ログアウト",
+        "sub_menu": {}
+      }
+    }
+  },
+  "options": {
+    "partner_owner": "オーナー(パートナー）",
+    "partner_manager": "マネージャー（パートナー）",
+    "profile": "プロフィール",
+    "settings": "設定",
+    "change_password": "パスワード変更",
+    "help": "ヘルプ",
+    "logout": "ログアウト"
+  },
+  "page_header": {
+    "dashboard": "パートナーダッシュボード",
+    "member": {
+      "manage": "パートナーメンバー",
+      "authorization": "パートナー権限",
+      "details": "ユーザー詳細",
+      "user": "ユーザー",
+      "activity": "利用履歴"
+    },
+    "transaction": {
+      "payment": "支払い",
+      "transactions": "トランザクション",
+      "pedding": "トランザクション（保留中）",
+      "ewallets": "バーチャルウォレット",
+      "billing": "請求ページ",
+      "billing_details": "請求詳細ページ",
+      "details": "トランザクション詳細",
+      "deposit": "入金",
+      "history": "トランザクション履歴",
+      "transfer": "口座間送金",
+      "withdrawal": "出金"
+    },
+    "invoice": {
+      "index": "Invoicing",
+      "details": "Invoice details"
+    },
+    "settings": {
+      "index": "設定",
+      "permissions": "権限設定"
+    },
+    "change_password": "パスワード変更",
+    "profile": {
+      "index": "プロフィール",
+      "edit": "プロフィール編集"
+    }
+  },
+  "label": {
+    "invoice": {
+      "manage": "Manage",
+      "create": "Create",
+      "client": "Client"
+    }
+  }
+}

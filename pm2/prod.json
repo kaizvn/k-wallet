@@ -1,0 +1,36 @@
+{
+  "apps": [
+    {
+      "name": "server",
+      "cwd": "./packages/server",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start"
+    },
+    {
+      "name": "client",
+      "cwd": "./packages/client",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start"
+    },
+    {
+      "name": "partner",
+      "cwd": "./packages/partner",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start"
+    },
+    {
+      "name": "admin",
+      "cwd": "./packages/admin",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start"
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+import { compact, concat, flow, join } from 'lodash/fp';
+import axios from 'axios';
+import { ethers, Contract } from 'ethers';
+import abi from './erc20-abi';
+import { parseBoolean } from '../utils';
+import {
+  formatTxSkeleton,
+  formatTxStructure,
+  getTotalReceived,
+  getTotalSent,
+  formatTransactionRef
+} from '../utils/erc20Utils';
+import { TYPE_TX_DEPOSIT } from '../graphql/enums/transactionType';
+import { TX_NO_FORWARDS } from '../types/blockcypherEvents';
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+// fee = Math.max( amount * 0.001 , 0.001 )
+const bigNumberToInt = (bigNumber) => {
+  return parseInt(bigNumber.toHexString());
+};
+
+const ETHER_LIVE_URL = process.env.ETHER_LIVE_URL;
+const ETHER_TESTNET_URL = process.env.ETHER_TESTNET_URL;
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
+const API_URL = process.env.HOOK_URL;
+const BC_CONFIRMATION_THRESHOLD =
+  parseInt(process.env.BC_CONFIRMATION_THRESHOLD) || 3;
+
+const createHookURL = flow(compact, concat(API_URL), join('/'));
+// hooks: [coinId, addressType, trackingId, event];
+export const generateHookUrl = (...paths) => createHookURL(paths);
+
+const createLiveUrl = function (chain) {
+  return chain === 'main' ? ETHER_LIVE_URL : ETHER_TESTNET_URL;
+};
+class EthereumWallet {
+  constructor({
+    coin,
+    addressToken = false,
+    chain = 'test',
+    isPFSupport = false,
+    singleValue = 1e8,
+    isEnabled = false,
+    isEther = true
+  }) {
+    this.coin = coin;
+    this.addressToken = addressToken;
+    this.liveUrl = createLiveUrl(chain);
+    this.liveTxUrl = this.liveUrl + '/tx/';
+    this.status = parseBoolean(isEnabled);
+    this.isEther = isEther;
+    this.statusPFSupport = parseBoolean(isPFSupport);
+    this.singleValue = singleValue;
+    this.chain = chain;
+    this.ethers = ethers;
+    this.provider = ethers.getDefaultProvider(
+      chain === 'main' ? 'homestead' : 'rinkeby'
+    );
+    this.contract = addressToken
+      ? new Contract(this.addressToken, abi, this.provider)
+      : this.provider;
+  }
+
+  isEnabled() {
+    return this.status;
+  }
+
+  isPFSupport() {
+    return this.statusPFSupport;
+  }
+
+  isEthereumCurrency() {
+    return this.isEther;
+  }
+
+  getCoinId() {
+    return this.coin;
+  }
+
+  fromSmallestToLargestUnit(amountInSmallestUnit) {
+    return amountInSmallestUnit / this.singleValue;
+  }
+
+  fromLargestToSmallestUnit(amountInLargestUnit) {
+    return Math.floor(amountInLargestUnit * this.singleValue);
+  }
+
+  getHashUrl(hash) {
+    return this.liveTxUrl + hash;
+  }
+
+  getNetWorkInfo() {
+    return this.provider.getNetwork();
+  }
+
+  async getGlobalFee() {
+    return bigNumberToInt(await this.provider.getGasPrice());
+  }
+
+  async getAddress(address) {
+    const balance = this.addressToken
+      ? await this.contract.balanceOf(address)
+      : await this.provider.getBalance(address);
+    return {
+      address,
+      balance,
+      unconfirmed_balance: 0,
+      final_balance: balance
+    };
+  }
+
+  async getAddressFull(address) {
+    const listTransaction = await this.getHistoryOfAddress(address);
+    const balance = this.addressToken
+      ? await this.contract.balanceOf(address)
+      : await this.provider.getBalance(address);
+    return {
+      address,
+      balance,
+      unconfirmed_balance: 0,
+      final_balance: balance,
+      n_tx: listTransaction.length,
+      txs: formatTxStructure(listTransaction),
+      txrefs: formatTransactionRef(listTransaction, address)
+    };
+  }
+
+  async getBalance(address) {
+    const listTransaction = await this.getHistoryOfAddress(address);
+    const balance = this.addressToken
+      ? await this.contract.balanceOf(address)
+      : await this.provider.getBalance(address);
+
+    return {
+      address,
+      total_received: getTotalReceived(listTransaction, address),
+      total_sent: getTotalSent(listTransaction, address),
+      balance,
+      unconfirmed_balance: 0,
+      final_balance: balance,
+      n_tx: listTransaction.length,
+      unconfirmed_n_tx: 0,
+      final_n_tx: listTransaction.length
+    };
+  }
+
+  // createWallet(data) {}
+
+  // getWallet(name) {}
+
+  // createHDWallet(data) {}
+
+  // getHDWallet(name) {}
+
+  async getTxDetails(txHash) {
+    let tx = {};
+    if (this.addressToken) {
+      tx = await this.contract.getTransaction(txHash);
+    } else {
+      tx = await this.provider.getTransaction(txHash);
+    }
+    return { ...tx, value: bigNumberToInt(tx.value) };
+  }
+
+  // addAddressToWallet(name, addresses) {}
+
+  createHashUrl(hash) {
+    return `${this.liveUrl}/tx/${hash}`;
+  }
+
+  async createAddress() {
+    const newEtherWallet = ethers.Wallet.createRandom();
+    const connectedWallet = newEtherWallet.connect(this.provider);
+
+    console.log({ newEtherWallet });
+    return {
+      address: connectedWallet.address,
+      private: connectedWallet.privateKey
+    };
+  }
+
+  createPaymentForwarding() {
+    throw new Error('This coin is not support payment forwarding!');
+  }
+
+  async createTxSkeleton({ fromAddress, toAddress, amount }) {
+    const gasPrice = (await this.provider.getGasPrice()).toNumber();
+    const gasLimit =
+      (Math.max((amount / this.singleValue) * 0.001, 0.001) *
+        this.singleValue) /
+      gasPrice;
+    const transaction = {
+      from: fromAddress,
+      to: toAddress,
+      gasLimit,
+      gasPrice,
+      data: '0x',
+      chainId: ethers.utils.getNetwork(this.getNetWorkInfo()).chainId
+    };
+    this.addressToken
+      ? (transaction.amount = amount)
+      : (transaction.value = amount);
+
+    return formatTxSkeleton(transaction);
+  }
+
+  async createNewTx({ fromAddress, toAddress, amount, privateKey }) {
+    try {
+      const txSkeleton = await this.createTxSkeleton({
+        fromAddress,
+        toAddress,
+        amount
+      });
+
+      return await this.broadcastTx(txSkeleton, privateKey);
+    } catch (e) {
+      console.error(e);
+      return;
+    }
+  }
+
+  async sweep({ privateKey, newAddress }) {
+    const wallet = new ethers.Wallet(privateKey, this.provider);
+    const gasLimit = 21000;
+    const gasPrice = await this.provider.getGasPrice();
+    const balance = await wallet.getBalance();
+    const value = balance.sub(gasPrice.mul(gasLimit));
+    const result = await wallet.sendTransaction({
+      gasLimit,
+      gasPrice,
+      to: newAddress,
+      value: value
+    });
+    return formatTxSkeleton({ ...result, total: bigNumberToInt(value) });
+  }
+
+  async broadcastTx(signedTxSkeleton, privateKey) {
+    const { gasLimit, gasPrice, to, value } = signedTxSkeleton.erc;
+    const wallet = new ethers.Wallet(privateKey, this.provider);
+    if (this.addressToken) {
+      const contract = new Contract(this.addressToken, abi, wallet);
+      return formatTxSkeleton(
+        await contract.transfer({ gasLimit, gasPrice, to, value })
+      );
+    }
+    const result = formatTxSkeleton(
+      await wallet.sendTransaction({
+        gasLimit,
+        gasPrice,
+        to,
+        value: ethers.utils.parseUnits(value.toString(), 0)
+      })
+    );
+    return result;
+  }
+
+  /* Hook events :
+   * unconfirmed-tx	, new-block, confirmed-tx, tx-confirmation, double-spend-tx, tx-confidence
+   * info: https://www.blockcypher.com/dev/bitcoin/#transfer-asset-endpoint
+   */
+
+  getHookList() {
+    return [];
+  }
+
+  async getHistoryOfAddress(address, options = {}) {
+    const { after = 0, before = 'latest' } = options;
+    let result = [];
+    if (this.addressToken) {
+      const filterFromMe = this.contract.filters.Transfer(address, null);
+      const filterToMe = this.contract.filters.Transfer(null, address);
+      filterFromMe.fromBlock = after;
+      filterFromMe.toBlock = before;
+      filterToMe.fromBlock = after;
+      filterToMe.toBlock = before;
+      const listLog = [
+        ...(await this.provider.getLogs(filterFromMe)),
+        ...(await this.provider.getLogs(filterToMe))
+      ];
+      for (const tx of listLog) {
+        const detailTx = await this.provider.getTransaction(tx.transactionHash);
+        result.push({
+          ...detailTx,
+          value: this.fromLargestToSmallestUnit(tx.value),
+          gasPrice: bigNumberToInt(detailTx.gasPrice),
+          gasLimit: bigNumberToInt(detailTx.gasLimit)
+        });
+      }
+      return result;
+    }
+
+    const etherscanProvider = new ethers.providers.EtherscanProvider(
+      this.getNetWorkInfo(),
+      ETHERSCAN_API_KEY
+    );
+    const listTransaction = await etherscanProvider.getHistory(
+      address,
+      after,
+      before
+    );
+    for (const tx of listTransaction) {
+      result.push({
+        ...tx,
+        value: bigNumberToInt(tx.value),
+        gasPrice: bigNumberToInt(tx.gasPrice),
+        gasLimit: bigNumberToInt(tx.gasLimit)
+      });
+    }
+    return result;
+  }
+
+  createAddressHook({
+    address,
+    coinId,
+    event = 'tx-confirmation',
+    addressType
+  }) {
+    const url = generateHookUrl(coinId, addressType, address, event);
+    this.provider.on(address, async (balance) => {
+      const listTransaction = await this.getHistoryOfAddress(address);
+      for (const tx of listTransaction) {
+        const body = {
+          event,
+          hash: tx.hash,
+          confirmations: BC_CONFIRMATION_THRESHOLD,
+          balance,
+          url
+        };
+        callHook(url, body);
+      }
+    });
+  }
+
+  createNonePFHook({ coinId, trackingId, inputAddress }) {
+    const url = generateHookUrl(
+      coinId,
+      TYPE_TX_DEPOSIT,
+      trackingId,
+      TX_NO_FORWARDS
+    );
+    this.provider.on(inputAddress, async (balance) => {
+      await sleep(1000 * 60 * 3);
+      const listTransaction = await this.getHistoryOfAddress(inputAddress);
+      for (const tx of listTransaction) {
+        const body = {
+          event: 'tx-confirmation',
+          hash: tx.hash,
+          confirmations: BC_CONFIRMATION_THRESHOLD,
+          addresses: [tx.from, tx.to],
+          inputs: [{ addresses: [tx.from] }],
+          outputs: [{ value: tx.value, addresses: [tx.to] }],
+          balance,
+          url
+        };
+        callHook(url, body);
+      }
+    });
+  }
+
+  createHashHook({ hash, coinId, event = 'tx-confirmation', addressType }) {
+    const url = generateHookUrl(coinId, addressType, hash, event);
+
+    this.provider.once(hash, async (receipt) => {
+      const body = {
+        hash: receipt.transactionHash,
+        event,
+        confirmations: BC_CONFIRMATION_THRESHOLD,
+        url
+      };
+      await callHook(url, body);
+    });
+  }
+}
+
+const callHook = async (url, body, timeoutRecall = 10000, count = 0) => {
+  const response = await axios.post(url, body);
+  if (response.status !== 200 && count <= 5) {
+    await sleep(timeoutRecall);
+    callHook(url, body, timeoutRecall * 2, count + 1);
+  }
+};
+
+export default EthereumWallet;

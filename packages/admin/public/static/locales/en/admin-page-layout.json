@@ -1,0 +1,115 @@
+{
+  "menu": {
+    "dashboard": {
+      "label": "Dashboard",
+      "submenu": {}
+    },
+    "partner": {
+      "label": "Partner",
+      "sub_menu": {
+        "manage_partner": "Manage Partner",
+        "users": "Users",
+        "activity": "Activity"
+      }
+    },
+    "user": {
+      "label": "Users",
+      "sub_menu": {
+        "manage_user": "Manage User",
+        "add_new_user": "Add New User"
+      }
+    },
+    "moderator": {
+      "label": "Moderators",
+      "sub_menu": {
+        "manage_moderator": "Manage Moderator",
+        "add_new_moderator": "Add New Moderator"
+      }
+    },
+    "transaction": {
+      "label": "Transaction",
+      "sub_menu": {
+        "review": "Review",
+        "transactions": "Transactions",
+        "pending_transactions": "Pending Transactions",
+        "virtual_wallets": "Virtual Wallets",
+        "billing": "Billing"
+      }
+    },
+    "coin": {
+      "label": "Coins",
+      "sub_menu": {
+        "manage_coin": "Manage Coin",
+        "add_new_coin": "Add New Coin"
+      }
+    },
+    "setting": {
+      "label": "Settings",
+      "sub_menu": {
+        "account_setting": "Account Setting",
+        "general_setting": "General Setting"
+      }
+    },
+    "logout": {
+      "label": "Logout",
+      "sub_menu": {}
+    }
+  },
+  "options": {
+    "administrator": "Administrator",
+    "moderator": "Moderator",
+    "profile": "Profile",
+    "change_password": "Change Password",
+    "settings": "Settings",
+    "help": "Help",
+    "logout": "Logout"
+  },
+  "page_header": {
+    "profile": {
+      "index": "Profile",
+      "edit": "Profile Edit"
+    },
+    "dashboard": {
+      "title": "Admin Dashboard"
+    },
+    "partner": {
+      "manage": "Partner Manage",
+      "details": "Partner Details",
+      "user": {
+        "manage": "Partner User Manage",
+        "details": "Partner User Details"
+      },
+      "activity": "Partner Activities"
+    },
+    "moderator": {
+      "manage": "Moderator Manage",
+      "add_new": "Add New Moderator",
+      "details": "Moderator details"
+    },
+    "user": {
+      "manage": "User manage",
+      "add_new": "Add New User",
+      "details": "User Details"
+    },
+    "transaction": {
+      "transfers": "Transfers",
+      "transactions": "Transactions",
+      "pending": "Pending Transactions",
+      "wallets": "Virtual Wallets",
+      "billing": "Billings",
+      "billing_details": "Billing Details"
+    },
+    "coin": {
+      "manage": "Coin Manage",
+      "add_new": "Add New Coin",
+      "details": "Coin Details",
+      "edit": "Edit Coin"
+    },
+    "settings": {
+      "title": "Settings"
+    },
+    "change_password": {
+      "title": "Change Password"
+    }
+  }
+}

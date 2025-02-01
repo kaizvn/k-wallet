@@ -1,0 +1,100 @@
+{
+  "transactions": {
+    "button": {
+      "back": "Back-jp"
+    },
+    "placeholder_search": "Search by name of senders or recipients-jp"
+  },
+  "payments": {
+    "button": {
+      "back": "Back-jp"
+    },
+    "placeholder_search": "Search by hash-jp"
+  },
+  "bills": {
+    "button": {
+      "back": "Back-jp"
+    },
+    "placeholder_search": "Search by owner name or address-jp"
+  },
+  "change_password": {
+    "button": {
+      "back": "Back-jp",
+      "change_password": "Change Your Password-jp"
+    },
+    "title": "Change your password-jp",
+    "label": {
+      "current_password": "Current password-jp",
+      "new_password": "New password-jp",
+      "re_new_password": "Re-type new password-jp"
+    }
+  },
+  "profile": {
+    "button": {
+      "back": "Back-jp"
+    },
+    "information": {
+      "title": "Your Information-jp",
+      "label": {
+        "yourname": "Your Name-jp",
+        "email": "Email-jp",
+        "two_step_verifycation": "2-Step Verifycation-jp"
+      },
+      "button": {
+        "save": "Save-jp",
+        "reset": "Reset-jp",
+        "change_password": "Change Password-jp"
+      },
+      "placeholder": {
+        "firstname": "First name-jp",
+        "lastname": "Last name-jp"
+      }
+    }
+  },
+  "wallets": {
+    "button": {
+      "back": "Back-jp"
+    }
+  },
+  "transaction_detail": {
+    "transaction_detail": {
+      "title": "Your Transaction Detail-jp"
+    },
+    "billing_detail": {
+      "title": "Your Billing Detail-jp"
+    },
+    "button": {
+      "back": "Back-jp"
+    }
+  },
+  "setting": {
+    "title": "Setting-jp",
+    "button": {
+      "back": "Back-jp",
+      "save": "Save-jp"
+    },
+    "label": {
+      "language": "Language-jp"
+    },
+    "message": {
+      "save_success": "Save successfully-jp"
+    }
+  },
+  "two_factor_authen": {
+    "title": "2-Step Verifycation-jp",
+    "label": {
+      "username": "Username-jp",
+      "password": "Password-jp"
+    },
+    "button": {
+      "cancel": "Cancel-jp",
+      "confirm": "Confirm-jp"
+    },
+    "placeholder_authen_code": "Enter the authen code-jp",
+    "title_setup_tfa": "Setup TFA-jp",
+    "message": {
+      "scan_qr_code": "Scan the QR code to get auth code in Google Authenticator-jp",
+      "auth_type": "Auth Type - Time Based-jp"
+    }
+  }
+}

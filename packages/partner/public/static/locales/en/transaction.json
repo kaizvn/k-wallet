@@ -1,0 +1,157 @@
+{
+  "deposit": {
+    "title": "Make New Deposit",
+    "instruction": {
+      "title": "Deposit Instruction",
+      "text": {
+        "policy": {
+          "text_normal": "By depositing tokens to this address, you agree to our",
+          "text_link": "deposit recovery policy"
+        },
+        "note_deposit_address": "Your deposit address is a deposit-only address that can be used only once. Please note that it cannot be reused."
+      },
+      "detail": {
+        "time": {
+          "title": "Reflection time:",
+          "content": "Within 24 hours"
+        },
+        "limit": {
+          "title": "Maximum deposit:",
+          "content": "None"
+        },
+        "minimum": {
+          "title": "Minimum deposit:"
+        },
+        "fee": {
+          "title": "Transaction Fee:",
+          "content": "Free"
+        }
+      },
+      "deposit_information": "Deposit Information"
+    },
+    "label": {
+      "tracking_id": "Tracking ID",
+      "deposit_address": {
+        "label_normal": "Address",
+        "label_bold": "Deposit"
+      },
+      "currencies": "Currencies",
+      "scan_qr": "Or Scan QR Code"
+    },
+    "button": {
+      "back": "Back"
+    }
+  },
+  "withdrawal": {
+    "title": "Make New Withdrawal",
+    "coin": "Coin",
+    "amount_label": "Amount",
+    "address": "Address",
+    "total_amount_label": "Total Withdrawal",
+    "instruction": {
+      "title": "Important Withdrawal Instruction",
+      "text": {},
+      "detail": {
+        "time": {
+          "title": "Reflection time: ",
+          "content": "Within 24 hours of working"
+        },
+        "limit": {
+          "title": "Maximum Withdraw: ",
+          "content": "{{limit}} per currency, per day",
+          "content_detail": {
+            "unit_character": "*",
+            "day": "day",
+            "unit_text": "BTC, ETH, etc.."
+          }
+        },
+        "fee": {
+          "title": "Fee Percentage",
+          "content": "Total fee",
+          "free": "Fee",
+          "value": "{{feePercentage}}% (Minimum fee: {{feeFixed}} {{symbol}})"
+        }
+      }
+    },
+    "wallet": {
+      "title": "Choose a Wallet",
+      "transaction_fee": "Transaction Fee"
+    },
+    "amount": {
+      "title": "Withdrawal Amount",
+      "label": {
+        "available": "Available",
+        "remittance_amount": "Remittance Amount",
+        "total_withdrawal": "Total Withdrawal"
+      }
+    },
+    "recipient": {
+      "title": "Recipient's Wallet Address",
+      "content": "Please verify the wallet address. We cannot refund an incorrect withdrawal !!"
+    },
+    "label": {
+      "tracking_id": "Tracking Id",
+      "deposit_address": {
+        "label_normal": "Address",
+        "label_bold": "Deposit"
+      },
+      "confirm_msg": "Confirm withdraw information",
+      "transaction_fee": "Transaction Fee",
+      "total_withdrawal": "Total Withdrawal"
+    },
+    "button": {
+      "back": "Back",
+      "withdraw": "Withdraw",
+      "confirm_withdraw": "Confirm",
+      "cancel": "Cancel",
+      "confirm": "Are you sure?"
+    },
+    "message": {
+      "payment_completed": "Payment Completed !"
+    }
+  },
+  "detail": {
+    "billing": {
+      "title": "Billing Details",
+      "button": {
+        "transaction_detail": "View Transaction Details"
+      }
+    }
+  },
+  "transfer": {
+    "title": "Transfer",
+    "label": {
+      "transfer_amount": "Transfer Amount",
+      "available": "Available",
+      "transaction_fee": "Transaction Fee",
+      "total_withdrawal": "Total Withdrawal"
+    },
+    "button": {
+      "back": "Back"
+    },
+    "header": {
+      "note_text": {
+        "note_one": "Disclaimer: do not withdraw directly to a crowdfund or ico.",
+        "note_two": "We will not credit your account with tokens from that sale."
+      }
+    },
+    "instruction": {
+      "title": "Transfer Instruction",
+      "note_text": {
+        "note_one": "In the withdrawal address field, we only support hex address.",
+        "note_two": "Do not use direct IBAN, indirect IBAN, or unique userid."
+      }
+    },
+    "recipient": {
+      "title": "Recipient's information",
+      "content": "Please verify the recipient’s account type to avoid making incorrect transfer."
+    },
+    "option": {
+      "label": {
+        "username": "Username",
+        "address": "Address",
+        "partner_id": "Partner Id"
+      }
+    }
+  }
+}

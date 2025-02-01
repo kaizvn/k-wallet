@@ -1,0 +1,92 @@
+{
+  "invoice": {
+    "button": {
+      "resend": "Resend",
+      "view": "View",
+      "add_new_item": "Add New Item",
+      "preview": "Preview",
+      "send_invoice": "Send Invoice",
+      "cancel": "Cancel",
+      "delete": "Delete"
+    },
+    "title": {
+      "basic_info": "Basic Information",
+      "company_info": "Company Information",
+      "invoice_items": "Invoice Items",
+      "recipients": "Recipients"
+    },
+    "label": {
+      "invoice_no": "Invoice No.",
+      "due_date": "Due Date",
+      "company_name": "Company Name",
+      "company_address": "Company Address",
+      "email": "Email",
+      "phone": "Phone",
+      "bill_to": "Bill To",
+      "total": "Total",
+      "note": "Note",
+      "cc_note": "Email address here are separated by comas(.)"
+    },
+    "table": {
+      "item": {
+        "name": "Name",
+        "item_description": "Item Description",
+        "quantity": "Quantity",
+        "price": "Price",
+        "amount": "Amount"
+      },
+      "coin": {
+        "coin": "Coin",
+        "sub_total": "Sub Total",
+        "margin": "Margin",
+        "total": "Total"
+      }
+    }
+  },
+  "invoice_client": {
+    "button": {
+      "create_invoice": "Create invoice",
+      "edit": "Edit",
+      "save_change": "Save Change",
+      "cancel": "Cancel"
+    },
+    "title": {
+      "update_client": "Update Client Info",
+      "create_new_client": "Create New Client"
+    },
+    "label": {
+      "name": "Client Name",
+      "email": "Email"
+    }
+  },
+  "details": {
+    "title": {
+      "invoice": "INVOICE",
+      "invoice_items": "Invoice Items",
+      "payment_address": "Payment Address",
+      "note": "Note"
+    },
+    "label": {
+      "due_date": "Due Date",
+      "invoice_code": "Invoice CODE",
+      "total": "Total",
+      "no_note": "No Note",
+      "to": "To"
+    },
+    "table": {
+      "item": {
+        "name": "Name",
+        "item_description": "Item Description",
+        "quantity": "Quantity",
+        "price": "Price",
+        "amount": "Amount"
+      },
+      "address": {
+        "coin": "Coin",
+        "symbol": "Symbol",
+        "total_amount": "Total Amount",
+        "address": "Address"
+      }
+    }
+  }
+}

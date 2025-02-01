@@ -1,0 +1,22 @@
+{
+  "short_name": "RevPayment",
+  "name": "RevPayment",
+  "description": "RevPayment provides a Payment Solution for your CryptoCurrencies: Safe, Fast, Reliable, and Easy to manage",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/static/kosmo/assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/kosmo/assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/user?utm_source=homescreen",
+  "theme_color": "#466bde",
+  "background_color": "#fff"
+}

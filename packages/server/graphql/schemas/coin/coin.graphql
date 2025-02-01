@@ -1,0 +1,69 @@
+type Coin {
+  id: ID!
+  name: String!
+  symbol: String!
+  logo: String
+  minimumWithdrawal: Float!
+  minimumDeposit: Float!
+  feePercentage: Float!
+  feeFixed: Float!
+  marginPercentage: Float!
+  isCompoundSupport: Boolean!
+  status: CoinStatus!
+  contractAddress: String
+  decimals: Float!
+  network: String!
+  isPFSupport: Boolean
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  get_coin(id: ID): Coin!
+  get_all_coins(availableOnly: Boolean): [Coin!]!
+}
+
+type Mutation {
+  add_new_coin(
+    id: ID!
+    name: String!
+    symbol: String!
+    logo: String
+    minimumWithdrawal: Float
+    minimumDeposit: Float
+    feePercentage: Float
+    feeFixed: Float
+    isCompoundSupport: Boolean
+    contractAddress: String
+    decimals: Float!
+    network: String!
+    isPFSupport: Boolean
+  ): Coin!
+  update_coin(
+    id: ID!
+    name: String
+    symbol: String
+    logo: String
+    minimumWithdrawal: Float
+    minimumDeposit: Float
+    feePercentage: Float
+    feeFixed: Float
+    isCompoundSupport: Boolean
+    contractAddress: String
+    decimals: Float
+    marginPercentage: Float
+    isPFSupport: Boolean
+  ): Coin!
+  update_coin_status(id: ID!, action: UpdateCoinStatusAction!): Coin!
+  remove_coin(id: ID!): Coin!
+}
+
+enum CoinStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum UpdateCoinStatusAction {
+  ENABLE
+  DISABLE
+}

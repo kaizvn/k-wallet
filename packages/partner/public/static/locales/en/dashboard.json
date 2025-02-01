@@ -1,0 +1,14 @@
+{
+  "card_detail": {
+    "title": "Logged as manage partner",
+    "username": "Username",
+    "valid_from": "Valid from",
+    "status": "Status"
+  },
+  "card_qr_code": {
+    "title": "Scan for receive payment"
+  },
+  "label": {
+    "empty_wallet": "You don't have any wallets yet"
+  }
+}

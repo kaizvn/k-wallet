@@ -1,0 +1,101 @@
+type SystemUser {
+  id: ID!
+  username: String!
+  title: String!
+  fullName: String!
+  firstName: String!
+  lastName: String!
+  birthDate: String!
+  birthDay: Int!
+  birthMonth: Int!
+  birthYear: Int!
+  age: Int!
+  gender: Gender!
+  email: String!
+  token: String!
+  status: UserStatus!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  role: SystemUserRole!
+  setting: UserSetting!
+}
+
+type Query {
+  get_system_users: [SystemUser!]!
+  get_system_user(id: ID!): SystemUser!
+  get_quick_filter_partners(filter: FilterTable!): FilterPartnerResult!
+  get_partner_users: [PartnerUser!]!
+  get_quick_filter_partner_users(filter: FilterTable!): FilterPartnerUserResult!
+  get_partner_user(id: ID!): PartnerUser!
+  get_partner_owners: [PartnerUser!]!
+  login_system_user(username: String!, password: String!): SystemUser!
+  get_quick_filter_users(filter: FilterTable!): FilterUserResult!
+  get_quick_filter_moderators(filter: FilterTable!): FilterModeratorResult!
+  get_quick_filter_coins(filter: FilterTable!): FilterCoinResult!
+}
+
+type Mutation {
+  add_user(
+    username: String!
+    password: String!
+    title: String!
+    firstName: String!
+    lastName: String!
+    birthDateString: String!
+    email: String!
+    phone: String!
+    identity: String!
+    country: String
+    region: String
+    address: String
+    zipCode: String
+    mccCode: String
+  ): User
+
+  add_moderator(
+    username: String!
+    password: String!
+    title: String!
+    firstName: String!
+    lastName: String!
+    birthDateString: String!
+    email: String!
+  ): SystemUser
+
+  invite_partner(email: String!): Partner!
+  register_system_user(
+    id: ID
+    username: String!
+    password: String!
+    title: String
+    firstName: String!
+    lastName: String!
+    birthDateString: String
+    email: String
+    role: SystemUserRole!
+  ): SystemUser!
+
+  update_partner_status(id: ID!, action: UpdateStatusAction!): Partner!
+  update_user_status(id: ID!, action: UpdateStatusAction!): User!
+  change_system_user_password(
+    currentPassword: String!
+    newPassword: String!
+  ): SystemUser!
+  change_admin_password(
+    currentPassword: String!
+    newPassword: String!
+    secretKey: String!
+  ): Boolean!
+}
+
+enum SystemUserRole {
+  ADMIN
+  MOD
+}
+
+enum UpdateStatusAction {
+  APPROVE
+  REJECT
+  BAN
+  UNBAN
+}

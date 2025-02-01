@@ -1,0 +1,49 @@
+{
+  "manage": {},
+  "add_new": {
+    "add_button": "Add",
+    "reset_button": "Reset",
+    "add_success_message": "Add new user successfully",
+    "add_error_messgae": "",
+    "title": "Add New User",
+    "username": "Username",
+    "username_placeholder": "Username",
+    "password": "Password",
+    "password_placeholder": "Password",
+    "email": "Email",
+    "email_placeholder": "Email",
+    "address": "Address",
+    "address_placeholder": "Address",
+    "mcc_code": "Mcc Code",
+    "mcc_code_placeholder": "e.g: +1",
+    "phone": "Phone Number",
+    "phone_placeholder": "Phone Number",
+    "zip_code": "Zip Code",
+    "zip_code_placeholder": "Zip Code",
+    "identity": "Identity",
+    "identity_placeholder": "Identity",
+    "select_title": "Select Title",
+    "first_name": "First Name",
+    "first_name_placeholder": "First Name",
+    "last_name": "Last Name",
+    "last_name_placeholder": "Last Name",
+    "birth_date": "Birth Date",
+    "select_country": "Select Country"
+  },
+  "detail": {
+    "user_details": {
+      "title": "User Details",
+      "label": {
+        "username": "Username",
+        "fullname": "Fullname",
+        "gender": "Gender",
+        "identity": "Identity",
+        "email": "Email",
+        "join_date": "Join Date",
+        "birth_date": "Birth Date",
+        "age": "Age",
+        "status": "Status"
+      }
+    }
+  }
+}

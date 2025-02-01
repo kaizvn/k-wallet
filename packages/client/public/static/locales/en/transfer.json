@@ -1,0 +1,26 @@
+{
+  "title": "Wallet Payment",
+  "label": {
+    "currency": "Currency",
+    "amount": "Amount",
+    "paying_for_goods": "Payings for goods and services",
+    "covered_by_our": "The seller pays the fee, and your eligible purchages are covered by our",
+    "buyer_protection": "Buyer Protection",
+    "available_amount": "Available Amount",
+    "send_to": "You are going to send to",
+    "transfer_comfirmation": "Transfer Confirmation"
+  },
+  "placeholder": {
+    "amount": "Amount"
+  },
+  "button": {
+    "send": "Send",
+    "back_to_dashboard": "Back to your dashboard"
+  },
+  "message": {
+    "account_not_available": "Your account is not available, please logged in or contact admin.",
+    "go_to_dashboard": "Go to dashboard",
+    "balance_insufficient": "Your balance is insufficient",
+    "do_not_have_wallet": "You don’t have any wallet"
+  }
+}

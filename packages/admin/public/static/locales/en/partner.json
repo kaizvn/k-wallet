@@ -1,0 +1,39 @@
+{
+  "manage": {},
+  "detail": {
+    "partner_details": {
+      "title": "Partner Details",
+      "label": {
+        "id": "ID",
+        "name": "Name",
+        "phone": "Phone",
+        "address": "Address",
+        "owner_name": "Owner Name",
+        "owner_username": "Owner Username",
+        "owner_email": "Owner Email",
+        "status": "Status",
+        "join_date": "Join Date"
+      }
+    }
+  },
+  "activities": {},
+  "user": {
+    "index": {},
+    "detail": {
+      "member_details": {
+        "title": "Member Details",
+        "label": {
+          "username": "Username",
+          "fullname": "Fullname",
+          "partner_id": "PartnerId",
+          "gender": "Gender",
+          "email": "Email",
+          "join_date": "Join Date",
+          "birth_date": "Birth Date",
+          "status": "Status",
+          "role": "Role"
+        }
+      }
+    }
+  }
+}

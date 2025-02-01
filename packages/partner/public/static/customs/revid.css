@@ -1,0 +1,4 @@
+/* override style default */
+body.ks-navbar-fixed {
+  padding: 0;
+}

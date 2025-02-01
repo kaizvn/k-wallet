@@ -1,0 +1,29 @@
+{
+  "options": {
+    "profile": "Profile",
+    "settings": "Settings",
+    "help": "Help",
+    "logout": "Logout",
+    "customer": "Customer"
+  },
+  "page_header": {
+    "user": {
+      "dashboard": "User Dashboard",
+      "bills": "User Bills",
+      "change_password": "User Change Password",
+      "deposit": "User Deposit",
+      "forgot_password": "User Forgot Password",
+      "payments": "User Payments",
+      "profile": "User Profile",
+      "register_success": "User Register Success",
+      "reset_password": "User Reset Password",
+      "transaction_details": "User Transaction Details",
+      "transactions": "User Transactions",
+      "two_factor": "User Two Factor Authen",
+      "wallets": "User Wallets",
+      "withdraw": "User Withdrawal",
+      "settings": "User Settings",
+      "transfer": "User Transfer"
+    }
+  }
+}

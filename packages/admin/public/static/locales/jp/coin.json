@@ -1,0 +1,54 @@
+{
+  "manage": {},
+  "update_success": "コインを更新しました",
+  "update_coin": "コインの更新",
+  "button": {
+    "disable_coin": "無効",
+    "enable_coin": "有効",
+    "edit": "編集",
+    "update": "更新"
+  },
+  "add_new": {
+    "add_button": "追加する",
+    "reset_button": "再設定",
+    "add_success_message": "新しいコインを正常に追加しました",
+    "title": "新しいコインを追加する",
+    "id": "ID",
+    "id_placeholder": "ID",
+    "name": "名前",
+    "name_placeholder": "名前",
+    "symbol": "シンボル",
+    "symbol_placeholder": "シンボル",
+    "logo": "ロゴ",
+    "minimum_withdrawal": "最低出金額",
+    "compound_support": "サポートコンバウンド",
+    "decimals": "少数",
+    "network": "ネットワークタイプ",
+    "support_PF": "前払いのサポート",
+    "margin_percentage": "Margin Percentage",
+    "percentage": "手数料の割合",
+    "fee_fixed": "固定料金",
+    "contract_address": "契約アドレス"
+  },
+  "detail": {
+    "coin_details": {
+      "title": "コインの詳細",
+      "label": {
+        "id": "ID",
+        "name": "名前",
+        "symbol": "シンボル",
+        "logo": "ロゴ",
+        "date_create": "作成日",
+        "decimals": "少数",
+        "network": "ネットワークタイプ",
+        "support_PF": "前払いのサポート",
+        "minimum_withdrawal": "最低出金額",
+        "compound_support": "サポートコンバウンド",
+        "percentage": "手数料の割合",
+        "fee_fixed": "固定料金",
+        "status": "ステータス",
+        "contract_address": "契約アドレス"
+      }
+    }
+  }
+}

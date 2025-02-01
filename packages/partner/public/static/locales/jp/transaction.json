@@ -1,0 +1,157 @@
+{
+  "deposit": {
+    "title": "入金",
+    "instruction": {
+      "title": "重要な入金説明",
+      "text": {
+        "policy": {
+          "text_normal": "このアドレスに入金することで、以下のものに同意することとする",
+          "text_link": "入金リカバリーポリシー"
+        },
+        "note_deposit_address": "こちらのアドレスは、入金専用のアドレスです。このアドレスは一度のみ利用可能です。＊再利用はできません"
+      },
+      "detail": {
+        "time": {
+          "title": "反映時間",
+          "content": "24時間以内"
+        },
+        "limit": {
+          "title": "最大入金額",
+          "content": "なし"
+        },
+        "minimum": {
+          "title": "Minimum deposit:"
+        },
+        "fee": {
+          "title": "手数料",
+          "content": "無料"
+        }
+      },
+      "deposit_information": "Deposit Information"
+    },
+    "label": {
+      "tracking_id": "トラッキングID",
+      "deposit_address": {
+        "label_normal": "アドレス",
+        "label_bold": "入金"
+      },
+      "currencies": "通貨",
+      "scan_qr": "Or Scan QR Code"
+    },
+    "button": {
+      "back": "戻る"
+    }
+  },
+  "withdrawal": {
+    "title": "出金",
+    "coin": "コイン",
+    "amount_label": "額",
+    "address": "アドレス",
+    "total_amount_label": "Total Withdrawal",
+    "instruction": {
+      "title": "重要な出金説明",
+      "text": {},
+      "detail": {
+        "time": {
+          "title": "反映時間",
+          "content": "24時間以内"
+        },
+        "limit": {
+          "title": "最大送金金額",
+          "content": "{{limit}} per currency, per day",
+          "content_detail": {
+            "unit_character": "*",
+            "day": "日",
+            "unit_text": "BTC, ETH, etc.."
+          }
+        },
+        "fee": {
+          "title": "手数料パーセンテージ",
+          "content": "最大手数料",
+          "free": "Fee",
+          "value": "{{feePercentage}}% (Minimum fee: {{feeFixed}} {{symbol}})"
+        }
+      }
+    },
+    "wallet": {
+      "title": "Choose a Wallet",
+      "transaction_fee": "Transaction Fee"
+    },
+    "amount": {
+      "title": "出金金額",
+      "label": {
+        "available": "利用可能",
+        "remittance_amount": "出金金額",
+        "total_withdrawal": "Total Withdrawal"
+      }
+    },
+    "recipient": {
+      "title": "受取人、ウォレットアドレス",
+      "content": "アドレスを承認してください。もし誤ってしまっても、返金することはできかねます"
+    },
+    "label": {
+      "tracking_id": "トラッキングID",
+      "deposit_address": {
+        "label_normal": "アドレス",
+        "label_bold": "入金"
+      },
+      "confirm_msg": "出金を承認する",
+      "transaction_fee": "Transaction Fee",
+      "total_withdrawal": "Total Withdrawal"
+    },
+    "button": {
+      "back": "戻る",
+      "withdraw": "出金",
+      "confirm_withdraw": "Confirm",
+      "cancel": "キャンセル",
+      "confirm": "本当によろしいでしょうか？"
+    },
+    "message": {
+      "payment_completed": "支払い完了"
+    }
+  },
+  "detail": {
+    "billing": {
+      "title": "請求書一覧",
+      "button": {
+        "transaction_detail": "トランザクション詳細をみる"
+      }
+    }
+  },
+  "transfer": {
+    "title": "内部送金",
+    "label": {
+      "transfer_amount": "内部送金額",
+      "available": "利用可能",
+      "transaction_fee": "トランザクション手数料",
+      "total_withdrawal": "合計出金額"
+    },
+    "button": {
+      "back": "戻る"
+    },
+    "header": {
+      "note_text": {
+        "note_one": "注意：直接、クラウドファンディングや、ICOに送金しないでください。",
+        "note_two": "ICOトークンはアカウントに入金されません。"
+      }
+    },
+    "instruction": {
+      "title": "内部送金説明",
+      "note_text": {
+        "note_one": "この出金フォームでは hex アドレスのみ利用可能です",
+        "note_two": "Do not use direct IBAN, indirect IBAN, or unique userid."
+      }
+    },
+    "recipient": {
+      "title": "受取人情報",
+      "content": "誤った送金をしないために 受取人のアカウントタイプを承認してください。"
+    },
+    "option": {
+      "label": {
+        "username": "ユーザー名",
+        "address": "アドレス",
+        "partner_id": "パートナーID"
+      }
+    }
+  }
+}

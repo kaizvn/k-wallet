@@ -1,0 +1,28 @@
+{
+  "account_setting": {
+    "title": "アカウント設定",
+    "button": {
+      "save": "保存"
+    },
+    "label": {
+      "language": "言語"
+    },
+    "message": {
+      "save_success": "正常に保存しました"
+    }
+  },
+  "general_setting": {
+    "title": "一般設定",
+    "label": {
+      "homepage_title": "ホームページタイトル",
+      "homepage_desc": "ホームページの説明",
+      "limit_transfer": "1日あたりの両替を制限する",
+      "maintenance_message": "メンテナンスメッセージ",
+      "transaction_fee": "取引手数料",
+      "master_wallet": "マスターウォレット"
+    },
+    "button": {
+      "save": "保存"
+    }
+  }
+}

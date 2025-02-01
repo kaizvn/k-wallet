@@ -1,0 +1,79 @@
+input DateRangeInput {
+  fromDate: String
+  toDate: String
+}
+type DateRangeOutput {
+  fromDate: String
+  toDate: String
+}
+input FilterTable {
+  page: Int
+  pageSize: Int
+  filterContents: String
+  dateRange: DateRangeInput
+}
+
+type FilterObject {
+  page: Int
+  pageSize: Int
+  filterContents: String
+  dateRange: DateRangeOutput
+}
+
+type PageInfo {
+  totalCount: Int
+  filter: FilterObject
+}
+
+type FilterTransactionsResult {
+  transactions: [Transaction!]!
+  pageInfos: PageInfo!
+}
+
+type FilterTransactionsResult {
+  transactions: [Transaction!]!
+  pageInfos: PageInfo!
+}
+type FilterPartnerUserResult {
+  partnerUsers: [PartnerUser!]!
+  pageInfos: PageInfo!
+}
+
+type FilterUserResult {
+  users: [User!]!
+  pageInfos: PageInfo!
+}
+
+type FilterModeratorResult {
+  users: [SystemUser!]!
+  pageInfos: PageInfo!
+}
+
+type FilterCoinResult {
+  coins: [Coin!]!
+  pageInfos: PageInfo!
+}
+
+type FilterPartnerResult {
+  partners: [Partner!]!
+  pageInfos: PageInfo!
+}
+
+type FilterWalletResults {
+  ewallets: [EWallet!]!
+  pageInfos: PageInfo!
+}
+
+type FilterBillResults {
+  bills: [Bill!]!
+  pageInfos: PageInfo!
+}
+
+type FilterInvoiceResult {
+  invoices: [Invoice!]!
+  pageInfos: PageInfo!
+}
+type FilterInvoiceClientResult {
+  invoiceClients: [InvoiceClient!]!
+  pageInfos: PageInfo!
+}

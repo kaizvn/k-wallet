@@ -1,0 +1,62 @@
+type ServerInfo {
+  maintenanceMessage: String
+  serverStatus: Boolean
+}
+
+type PartnerSetting {
+  timezone: String
+  language: String
+  callbackUrl: String
+  partnerName: String
+  partnerDescription: String
+  transferLimit: Float
+  serviceStatus: Boolean
+}
+type UserSetting {
+  id: ID!
+  userId: ID!
+  timezone: String
+  language: String
+}
+
+type GeneralSetting {
+  homePageTitle: String
+  homePageDescription: String
+  serverStatus: Boolean
+  transferLimit: Float
+  maintenanceMessage: String
+  masterWallet: String
+  minimumValue: Float
+}
+
+type TransferLimit {
+  transferLimit: Float
+}
+
+type Mutation {
+  set_partner_setting(
+    timezone: String
+    callbackUrl: String
+    partnerName: String
+    partnerDescription: String
+    transferLimit: Float
+    serviceStatus: Boolean
+  ): PartnerSetting!
+  set_account_setting(timezone: String, language: String): UserSetting!
+
+  set_general_setting(
+    homePageTitle: String
+    homePageDescription: String
+    serverStatus: Boolean
+    transferLimit: Float
+    maintenanceMessage: String
+  ): GeneralSetting!
+}
+
+type Query {
+  get_partner_setting: PartnerSetting!
+  get_account_setting: UserSetting!
+  get_general_setting: GeneralSetting!
+  get_general_transfer_limit: TransferLimit!
+  get_server_info: ServerInfo!
+}

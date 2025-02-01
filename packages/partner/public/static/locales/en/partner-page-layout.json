@@ -1,0 +1,134 @@
+{
+  "menu": {
+    "partner_owner": {
+      "dashboard": {
+        "label": "Dashboard",
+        "sub_menu": {}
+      },
+      "member": {
+        "label": "Member",
+        "sub_menu": {
+          "manage_member": "Manage Member",
+          "users": "Users",
+          "activity": "Activity"
+        }
+      },
+      "transaction": {
+        "label": "Transaction",
+        "sub_menu": {
+          "deposit": "Deposit",
+          "withdraw": "Withdraw",
+          "transactions": "Transactions",
+          "virtual_wallets": "Virtual Wallets",
+          "billings": "Billings",
+          "pending_transactions": "Pending Transactions"
+        }
+      },
+      "invoice": {
+        "label": "Invoicing"
+      },
+      "setting": {
+        "label": "Settings",
+        "sub_menu": {
+          "partner_setting": "Partner Setting",
+          "account_setting": "Account Setting",
+          "permissions": "Permissions"
+        }
+      },
+      "logout": {
+        "label": "Logout",
+        "sub_menu": {}
+      }
+    },
+    "partner_member": {
+      "dashboard": {
+        "label": "Dashboard",
+        "sub_menu": {}
+      },
+      "order": {
+        "label": "Order",
+        "sub_menu": {}
+      },
+      "member": {
+        "label": "Member",
+        "sub_menu": {
+          "manage_member": "Manage Member",
+          "users": "Users",
+          "activity": "Activity"
+        }
+      },
+      "transaction": {
+        "label": "Transaction",
+        "sub_menu": {
+          "deposit": "Deposit",
+          "transactions": "Transactions",
+          "virtual_wallets": "Virtual Wallets",
+          "billings": "Billings"
+        }
+      },
+      "setting": {
+        "label": "Settings",
+        "sub_menu": {
+          "account_setting": "Account Setting",
+          "permissions": "Permissions"
+        }
+      },
+      "logout": {
+        "label": "Logout",
+        "sub_menu": {}
+      }
+    }
+  },
+  "options": {
+    "partner_owner": "Partner Owner",
+    "partner_manager": "Partner Manager",
+    "profile": "Profile",
+    "settings": "Settings",
+    "change_password": "Change Password",
+    "help": "Help",
+    "logout": "Logout"
+  },
+  "page_header": {
+    "dashboard": "Partner dashboard",
+    "member": {
+      "manage": "Partner members",
+      "authorization": "Partner authorization",
+      "details": "User details",
+      "user": "Users",
+      "activity": "Activities History"
+    },
+    "transaction": {
+      "payment": "Payments",
+      "transactions": "Transactions",
+      "pedding": "Pending Transactions",
+      "ewallets": "Virtual Wallets",
+      "billing": "Billing page",
+      "billing_details": "Billing Details page",
+      "details": "Transaction Details",
+      "deposit": "Deposit",
+      "history": "Transactions History",
+      "transfer": "Transfer",
+      "withdrawal": "Withdrawal"
+    },
+    "invoice": {
+      "index": "Invoicing",
+      "details": "Invoice details"
+    },
+    "settings": {
+      "index": "Settings",
+      "permissions": "Permissions Setting"
+    },
+    "change_password": "Change Password",
+    "profile": {
+      "index": "Profile",
+      "edit": "Edit Profile"
+    }
+  },
+  "label": {
+    "invoice": {
+      "manage": "Manage",
+      "create": "Create",
+      "client": "Client"
+    }
+  }
+}

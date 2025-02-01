@@ -1,0 +1,227 @@
+{
+  "index": {
+    "button": {
+      "join_us_today": "本日参加してください！",
+      "login": "ログイン"
+    },
+    "title": "REV PAYMENT",
+    "label": {
+      "label_one": "RevPaymentは、仮想通貨払いの解決策を提供します：安全、高速、信頼性が高く、管理が簡単です。",
+      "label_two": "2014年以来、支払いシステム構築の経験を持つRevollet Groupは、Revpaymentが仮想通貨取引をこれまで以上に簡単にすることができると考えています。"
+    }
+  },
+  "required_field": "必要箇所",
+  "invalid_email": "無効なEメールアドレス",
+  "save_success": "正常に保存されました。",
+  "profile": {
+    "title": {
+      "username": "ユーザーネーム",
+      "fullname": "氏名",
+      "email": "Eメール"
+    },
+    "button": {
+      "edit": "編集する",
+      "change_password": "パスワードの変更"
+    }
+  },
+  "edit_profile": {
+    "title": "管理者プロフィールの編集",
+    "label": {
+      "admin_name": "氏名",
+      "email": "Eメール"
+    },
+    "button": {
+      "save": "保存",
+      "reset": "リセット"
+    }
+  },
+  "message": {
+    "empty_bill": "請求書がありません",
+    "empty_ewallet": "ウォレットを持っていません。",
+    "empty_payment": "支払いがありません",
+    "empty_transaction": "取引が見つかりません"
+  },
+  "change_password": {
+    "button": {
+      "change_password": "パスワードを変更する"
+    },
+    "title": "パスワードを変更する",
+    "label": {
+      "current_password": "直近のパスワード",
+      "new_password": "新規パスワード",
+      "re_new_password": "新規パスワードを再入力"
+    }
+  },
+  "forgot_password": {
+    "title": "パスワードをリセットする",
+    "label": {
+      "input_email": "Eメールを入力"
+    },
+    "button": {
+      "get_email_confirm": "確認メールを取得する"
+    },
+    "message": {
+      "check_your_email": "Eメールにパスワード再設定のリンクが届いているか確認して下さい。"
+    }
+  },
+  "rev_shared": {
+    "date_range_picker": {
+      "label": {
+        "start_date": "開始日",
+        "end_date": "終了日"
+      },
+      "error": "日付の形式が正しくありません！"
+    },
+    "button": {
+      "invite": "招待する",
+      "advance_search": "検索に進む",
+      "apply": "申込む"
+    },
+    "switch": {
+      "status": {
+        "on": "オン",
+        "off": "オフ"
+      }
+    },
+    "label": {
+      "birth_date": "生年月日",
+      "select_country": "国を選択",
+      "select_region": "地域を選択",
+      "time_zone": "タイムゾーン",
+      "select_date": "日付範囲を選択"
+    },
+    "enums": {
+      "status": {
+        "user": {
+          "u_active": "稼働中",
+          "u_pending": "保留中",
+          "u_suspended": "一時停止",
+          "u_banned": "禁止された",
+          "u_rejected": "拒否された",
+          "u_cancelled": "キャンセルされた"
+        },
+        "partner": {
+          "p_active": "稼働中",
+          "P_pending": "保留中",
+          "p_suspended": "一時停止",
+          "p_banned": "禁止された",
+          "p_rejected": "拒否された",
+          "p_cancelled": "キャンセルされた"
+        },
+        "payment": {
+          "pending": "保留中",
+          "reverted": "元に戻された",
+          "rejected": "拒否された",
+          "finished": "完了した",
+          "cancelled": "キャンセルされた",
+          "failed": "失敗"
+        },
+        "order": {
+          "pending": "保留中",
+          "finish": "完了",
+          "cancel": "キャンセル",
+          "rejected": "拒否された",
+          "revert": "元に戻す"
+        },
+        "transaction": {
+          "pending": "保留中",
+          "finished": "完了した",
+          "cancelled": "キャンセルされた",
+          "rejected": "拒否された",
+          "revert": "元に戻す",
+          "pending_admin_approval": "管理者承認保留中"
+        },
+        "bill": {
+          "reverted": "元に戻された",
+          "failed": "失敗",
+          "expired": "期限切れ",
+          "pending": "保留中",
+          "created": "作成された",
+          "paid": "支払い",
+          "hold": "継続中",
+          "closed": "クローズ",
+          "not_enough_fund": "資金が不足しています",
+          "confirmed": "確認"
+        }
+      },
+      "type": {
+        "transaction": {
+          "deposit": "入金",
+          "transfer": "両替",
+          "withdraw": "出金"
+        },
+        "bill": {
+          "deposit": "入金",
+          "transfer": "両替",
+          "withdraw": "出金"
+        }
+      }
+    },
+    "upload_avatar": {
+      "trigger_label": "アバターを変更",
+      "choose_file": "ファイルを選択",
+      "ok": "OK"
+    },
+    "billing_card": {
+      "label": {
+        "id": "ID",
+        "bill_type": "請求タイプ",
+        "owner_name": "オーナーネーム",
+        "currency": "通貨",
+        "tracking_id": "追跡ID",
+        "address": "アドレス",
+        "status": "ステータス",
+        "date_created": "作成日",
+        "date_updated": "更新日",
+        "amount": "数量",
+        "actual_amount": "実際の数量",
+        "transaction_fee": "取引手数料"
+      }
+    },
+    "pagination": {
+      "previous": "前",
+      "next": "次"
+    },
+    "popup": {
+      "button": {
+        "close": "閉じる"
+      }
+    },
+    "message": {
+      "empty_ewallet": "ウォレットを持っていません。",
+      "empty_bill": "請求書が見つかりませんでした。",
+      "empty_transaction": "取引が見つかりませんでした。",
+      "password_recommend": "パスワードは8文字以上である必要があります。（大文字、小文字、英語、数字、スペース、記号を入力することでより強固なパスワードになります。）"
+    },
+    "transaction_card": {
+      "label": {
+        "transaction_id": "トランザクションID",
+        "currency": "通貨",
+        "transaction_type": "トランザクションタイプ",
+        "receiver": "受取人",
+        "fee": "手数料",
+        "amount": "数量",
+        "status": "ステータス",
+        "date_created": "作成日",
+        "description": "説明"
+      }
+    },
+    "reset_password": {
+      "title": "パスワードをリセットする",
+      "label": {
+        "new_password": "新規パスワード",
+        "re_new_password": "新規パスワードの再入力"
+      },
+      "button": {
+        "reset_password": "パスワードをリセットする",
+        "back_to_home": "ホームページに戻る"
+      }
+    },
+    "do_success": {
+      "label": "ホームページに戻る"
+    },
+    "placeholder": {
+      "password": "パスワード"
+    }
+  }
+}

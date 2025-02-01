@@ -1,0 +1,77 @@
+{
+  "login": {
+    "header": "Rev Payment",
+    "title": "ユーザーログイン",
+    "button": {
+      "login": "ログイン"
+    },
+    "label": {
+      "remember_me": "記録する",
+      "forgot_password": "パスワードをお忘れですか？",
+      "copyright": "2019 RevPayment",
+      "privacy_policy": "プライバシーポリシー",
+      "contact": "連絡先",
+      "sign_up": "アカウントをお持ちではないですか？登録して下さい"
+    },
+    "placeholder": {
+      "username": "ユーザーネーム",
+      "password": "パスワード"
+    }
+  },
+  "register": {
+    "title": {
+      "sign_up": "登録",
+      "account_info": "口座情報",
+      "partner_info": "パートナー情報"
+    },
+    "placeholder": {
+      "username": "ユーザーネーム",
+      "password": "パスワード",
+      "email": "Eメール",
+      "mcc_code": "e.g: +1",
+      "phone_number": "電話番号",
+      "firstname": "名",
+      "lastname": "氏",
+      "id_passport": "ID No. / パスポート No.",
+      "partner_id": "パートナーID",
+      "partner_name": "パートナーネーム",
+      "partner_phone": "パートナー電話番号",
+      "partner_email": "パートナーEメール",
+      "partner_address": "パートナー住所"
+    },
+    "button": {
+      "register": "登録"
+    },
+    "label": {
+      "label_normal": {
+        "terms": "登録をクリックすると",
+        "already_account": "既に口座をお持ちですか？"
+      },
+      "label_link": {
+        "login": "ログイン",
+        "terms": "利用規約"
+      },
+      "username": "ユーザーネーム",
+      "password": "パスワード",
+      "email": "Eメール",
+      "mcc_code": "Mccコード",
+      "phone_number": "電話番号",
+      "firstname": "名",
+      "lastname": "氏",
+      "id_passport": "IDナンバー/パスポートナンバー",
+      "partner_id": "パートナーID",
+      "partner_name": "パートナーネーム",
+      "partner_phone": "パートナー電話番号",
+      "partner_email": "パートナーEメール",
+      "partner_address": "パートナー住所"
+    }
+  },
+  "register_success": {
+    "title": "ご予約が送信されました!",
+    "label": {
+      "waitting_approval": "ご利用可能になるまでお待ちください",
+      "back_to_home": "ホームページへ戻る",
+      "click_here": "こちらをクリックして下さい"
+    }
+  }
+}

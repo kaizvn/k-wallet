@@ -1,0 +1,115 @@
+{
+  "menu": {
+    "dashboard": {
+      "label": "ダッシュボード",
+      "submenu": {}
+    },
+    "partner": {
+      "label": "パートナー",
+      "sub_menu": {
+        "manage_partner": "パートナー管理",
+        "users": "ユーザー",
+        "activity": "アクティビティ"
+      }
+    },
+    "user": {
+      "label": "ユーザー",
+      "sub_menu": {
+        "manage_user": "ユーザー管理",
+        "add_new_user": "新しいユーザーを追加する"
+      }
+    },
+    "moderator": {
+      "label": "モデレーター",
+      "sub_menu": {
+        "manage_moderator": "モデレーター管理",
+        "add_new_moderator": "新しいモデレーターを追加する"
+      }
+    },
+    "transaction": {
+      "label": "トランザクション",
+      "sub_menu": {
+        "review": "レビュー",
+        "transactions": "トランザクション",
+        "pending_transactions": "トランザクション（保留中）",
+        "virtual_wallets": "仮装ウォレット",
+        "billing": "請求書"
+      }
+    },
+    "coin": {
+      "label": "通貨",
+      "sub_menu": {
+        "manage_coin": "通貨管理",
+        "add_new_coin": "新しい通貨を追加する"
+      }
+    },
+    "setting": {
+      "label": "設定",
+      "sub_menu": {
+        "account_setting": "アカウント設定",
+        "general_setting": "一般的な設定"
+      }
+    },
+    "logout": {
+      "label": "ログアウト",
+      "sub_menu": {}
+    }
+  },
+  "options": {
+    "administrator": "管理者",
+    "moderator": "モデレーター",
+    "profile": "プロフィール",
+    "change_password": "パスワード変更",
+    "settings": "設定",
+    "help": "ヘルプ",
+    "logout": "ログアウト"
+  },
+  "page_header": {
+    "profile": {
+      "index": "プロフィール",
+      "edit": "プロフィール編集"
+    },
+    "dashboard": {
+      "title": "管理者ダッシュボード"
+    },
+    "partner": {
+      "manage": "パートナー管理",
+      "details": "パートナー詳細",
+      "user": {
+        "manage": "パートナーユーザー管理",
+        "details": "パートナーユーザー詳細"
+      },
+      "activity": "パートナー利用状況"
+    },
+    "moderator": {
+      "manage": "モデレーター管理",
+      "add_new": "新しいモデレーターを追加する",
+      "details": "モデレーター詳細"
+    },
+    "user": {
+      "manage": "ユーザー管理",
+      "add_new": "新しいユーザーを追加する",
+      "details": "ユーザー詳細"
+    },
+    "transaction": {
+      "transfers": "振替",
+      "transactions": "トランザクション",
+      "pending": "トランザクション（保留中）",
+      "wallets": "仮装ウォレット",
+      "billing": "請求書",
+      "billing_details": "請求書一覧"
+    },
+    "coin": {
+      "manage": "通貨管理",
+      "add_new": "新しい通貨を追加する",
+      "details": "通貨詳細",
+      "edit": "通貨編集"
+    },
+    "settings": {
+      "title": "設定"
+    },
+    "change_password": {
+      "title": "パスワード変更"
+    }
+  }
+}

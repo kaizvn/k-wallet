@@ -1,0 +1,130 @@
+type Transaction {
+  id: ID!
+  coin: Coin!
+  bill: Bill
+  trackingId: String
+  from: EWalletOwner!
+  to: EWalletOwner!
+  amount: Float!
+  fee: Float!
+  hash: String
+  hashUrl: String!
+  blockHash: String
+  description: String
+  type: TransactionType!
+  status: TransactionStatus!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  updatedBy: MeResult
+  receivedAddress: String
+}
+
+enum TransactionStatus {
+  FAILED
+  PENDING
+  FINISHED
+  CANCELLED
+  REJECTED
+  REVERTED
+  PENDING_ADMIN_APPROVAL
+  PENDING_PARTNER_APPROVAL
+  MANUAL_ADMIN
+}
+
+enum TransactionType {
+  TRANSFER
+  DEPOSIT
+  WITHDRAW
+}
+
+type Query {
+  get_transaction(id: ID): Transaction!
+  get_all_transactions(filter: FilterTable!): FilterTransactionsResult!
+  get_quick_filter_transactions(filter: FilterTable!): FilterTransactionsResult!
+  get_quick_filter_pending_transactions(
+    filter: FilterTable!
+  ): FilterTransactionsResult!
+  get_required_partner_approval_transactions: [Transaction!]!
+  get_required_admin_approval_transactions: [Transaction!]!
+
+  get_quick_filter_payments(filter: FilterTable!): FilterTransactionsResult!
+  get_count_all_transactions: Int!
+  get_withdraw_tx_info(
+    recipientAddress: String!
+    coinId: String!
+    amount: Float!
+  ): WithdrawInfo
+
+  get_withdraw_fees: [Fee!]!
+  get_withdraw_fee(coinId: String!): Fee!
+}
+
+type WithdrawInfo {
+  coinId: String!
+  toAddress: String!
+  amount: Float!
+  fee: Float
+}
+
+type Fee {
+  coinID: ID!
+  coinName: String!
+  minimumAmount: Float!
+  percentageFee: Float!
+  fixedFee: Float!
+}
+
+type Mutation {
+  set_is_delivery(id: ID): Transaction!
+  set_revert_delivery(id: ID): Transaction!
+  pay(
+    coinId: String!
+    partnerId: String!
+    amount: Float!
+    description: String
+    tx_type: String
+  ): Transaction!
+  send(
+    coinId: String!
+    username: String!
+    amount: Float!
+    tx_type: String
+    description: String
+  ): Transaction!
+
+  set_paid_transaction(id: ID): TransactionPayload
+  cancel_transaction(id: ID): TransactionPayload
+
+  create_deposit_address(
+    trackingId: String!
+    coinId: String!
+  ): DepositAddressResp!
+
+  renew_deposit_address(
+    username: String!
+    trackingId: String
+    coinId: String!
+    emptyDepositAddresses: Boolean
+  ): Boolean!
+
+  create_withdraw_transaction(
+    recipientAddress: String!
+    coinId: String!
+    amount: Float!
+    trackingId: String
+  ): Transaction!
+
+  approve_pending_transaction(id: ID!): Transaction!
+  reject_pending_transaction(id: ID!): Transaction!
+
+  resend_callback(id: ID!): Transaction!
+
+  force_recheck_address(address: String!): Boolean!
+  force_recheck_wallet(walletId: String!): Boolean!
+  manual_transaction(hash: String!, txId: String!): Transaction!
+}
+
+type TransactionPayload {
+  transaction: Transaction
+  status: Boolean
+}

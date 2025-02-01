@@ -1,0 +1,22 @@
+{
+  "manage": {},
+  "user": {},
+  "activities": {},
+  "detail": {
+    "member_detail": {
+      "title": "Member Details",
+      "label": {
+        "username": "Username",
+        "fullname": "Fullname",
+        "partner_id": "PartnerId",
+        "country": "Country",
+        "gender": "Gender",
+        "email": "Email",
+        "join_date": "Join Date",
+        "birth_date": "Birth Date",
+        "status": "Status",
+        "role": "Role"
+      }
+    }
+  }
+}

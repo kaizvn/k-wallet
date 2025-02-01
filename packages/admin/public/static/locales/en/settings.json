@@ -1,0 +1,28 @@
+{
+  "account_setting": {
+    "title": "Account Setting",
+    "button": {
+      "save": "Save"
+    },
+    "label": {
+      "language": "Language"
+    },
+    "message": {
+      "save_success": "Save successfully"
+    }
+  },
+  "general_setting": {
+    "title": "General Setting",
+    "label": {
+      "homepage_title": "HomePage Title",
+      "homepage_desc": "HomePage Description",
+      "limit_transfer": "Limit Transfer per Day",
+      "maintenance_message": "Maintenance Message",
+      "transaction_fee": "Transaction fee",
+      "master_wallet": "Master Wallet"
+    },
+    "button": {
+      "save": "Save"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "user_dashboard": {
+    "title": "User Dashboard",
+    "card_detail": {
+      "username": "Username",
+      "valid_from": "Valid from",
+      "status": "Status",
+      "button": {
+        "logout": "Logout"
+      }
+    },
+    "card_qr_code": {
+      "title": "Scan for request payment"
+    },
+    "card_wallets": {
+      "title": "Your Wallets",
+      "button": {
+        "view_all": "View all"
+      }
+    },
+    "pending_warning": {
+      "verified_yet": "Your account wasn't verified yet.",
+      "please_go_to": "Please go to",
+      "diro": "Diro",
+      "submit_document": "and submit document."
+    }
+  },
+  "recent_transactions": {
+    "tab_label": {
+      "transactions": "Transactions",
+      "payments": "Payments"
+    },
+    "title": {
+      "fixed_title": "Your Recent",
+      "toggle_title": {
+        "transactions": "Transactions",
+        "payments": "Payments"
+      }
+    },
+    "button": {
+      "view_all_transaction": "View all",
+      "view_all_payment": "View all"
+    },
+    "card": {
+      "title": {
+        "paid": "Paid",
+        "received": "Received"
+      },
+      "label": {
+        "payment_time": "Payment Time",
+        "to": "To",
+        "from": "From",
+        "receiver": "Receiver",
+        "hash": "Hash"
+      },
+      "button": {
+        "view_detail": "View detail"
+      }
+    },
+    "hover": {
+      "eth": "View on Etherscan",
+      "btc": "View on Blockchain"
+    }
+  },
+  "recent_billings": {
+    "title": "Your Recent Billings",
+    "button": {
+      "view_all": "View all"
+    },
+    "card": {
+      "title": {
+        "deposit": "DEPOSIT",
+        "withdraw": "WITHDRAW"
+      },
+      "label": {
+        "owner": "Owner",
+        "bill_id": "Bill Id",
+        "tracking_id": "Tracking id",
+        "address": "Address",
+        "status": "Status",
+        "date_created": "Date created",
+        "date_updated": "Date updated",
+        "amount": "Amount",
+        "actual_amount": "Actual Amount",
+        "transaction_fee": "Transaction fee"
+      }
+    }
+  }
+}

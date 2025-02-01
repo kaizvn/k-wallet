@@ -1,0 +1,40 @@
+type Partner {
+  id: ID!
+  partnerId: String
+  name: String
+  phone: String
+  email: String!
+  address: String
+  owner: PartnerUser!
+  members: [PartnerUser!]!
+  status: PartnerStatus!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+type PaidPartner {
+  id: ID!
+  partnerId: String
+  name: String
+  phone: String
+  email: String
+  address: String
+}
+type Query {
+  get_partners: [Partner]!
+  get_partner(id: ID!): Partner!
+  get_current_partner: Partner!
+  get_paid_partner(id: ID, partnerId: String): PaidPartner!
+}
+
+type Mutation {
+  cancel_partner_invitation(id: ID!): Partner
+}
+
+enum PartnerStatus {
+  REJECTED
+  PENDING
+  ACTIVE
+  SUSPENDED
+  CANCELLED
+  BANNED
+}

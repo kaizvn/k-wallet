@@ -1,0 +1,27 @@
+type Heiau {
+  id: ID
+  name: String
+  symbol: String
+  logo: String
+}
+
+type Mutation {
+  pay_heiau(
+    partnerId: String!
+    amount: Float!
+    description: String
+    tx_type: String
+  ): Transaction
+  send_heiau(
+    username: String!
+    amount: Float!
+    description: String
+    tx_type: String
+  ): Transaction
+  topup_heiau_admin(
+    username: String
+    partnerId: String
+    tx_type: String
+    amount: Float!
+  ): Transaction
+}

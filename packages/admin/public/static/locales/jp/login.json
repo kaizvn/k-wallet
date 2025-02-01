@@ -1,0 +1,18 @@
+{
+  "header": "Rev Payment",
+  "title": "ユーザーログイン",
+  "button": {
+    "login": "ログイン"
+  },
+  "label": {
+    "remember_me": "記憶します",
+    "forgot_password": "パスワードをお忘れですか？",
+    "copyright": "2020 RevPayment",
+    "privacy_policy": "プライバシーポリシー",
+    "contact": "問合せ先"
+  },
+  "placeholder": {
+    "username": "ユーザーネーム",
+    "password": "パスワード"
+  }
+}

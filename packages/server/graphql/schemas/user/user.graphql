@@ -1,0 +1,100 @@
+type User {
+  id: ID!
+  username: String!
+  title: String!
+  fullName: String!
+  firstName: String!
+  lastName: String!
+  birthDate: String!
+  birthDay: Int!
+  birthMonth: Int!
+  birthYear: Int!
+  age: Int!
+  gender: Gender!
+  email: String!
+  phone: String!
+  identity: String!
+  token: String
+  status: UserStatus!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  mccCode: String!
+  setting: UserSetting!
+  avatar: String
+  twoFactorEnabled: Boolean
+}
+type ReceivedUser {
+  id: ID!
+  username: String!
+  fullName: String!
+  gender: Gender!
+  email: String!
+  phone: String!
+}
+type UserWith2FA {
+  user: User
+  isLoginBy2FA: Boolean
+}
+
+type Query {
+  get_normal_users: [User!]!
+  get_normal_user(id: ID!): User!
+  me: MeResult!
+  get_received_user(username: String!): User!
+  login_normal_user(
+    username: String!
+    password: String!
+    authCode: String
+  ): UserWith2FA!
+  get_state_enable_2FA: Boolean
+  verify_auth_code_2FA(authCode: String!): Boolean!
+}
+
+type Mutation {
+  register_normal_user(
+    id: ID
+    username: String!
+    password: String!
+    title: String!
+    firstName: String!
+    lastName: String!
+    birthDateString: String!
+    email: String!
+    phone: String!
+    identity: String!
+    mccCode: String!
+  ): User!
+
+  edit_my_info(
+    title: String
+    firstName: String
+    lastName: String
+    birthDateString: String
+    email: String
+    identity: String
+    avatar: String
+    country: String
+    region: String
+  ): MeResult!
+
+  change_user_password(currentPassword: String!, newPassword: String!): User!
+  verify_password(password: String!): Boolean!
+  update_password_user(id: ID!, newPassword: String!): User!
+  generate_secret_key_2FA: String!
+  set_state_enable_2FA(isEnable: Boolean!): User!
+}
+
+enum UserStatus {
+  REJECTED
+  PENDING
+  ACTIVE
+  BANNED
+  CANCELLED
+}
+
+enum Gender {
+  MALE
+  FEMALE
+}
+
+union MeResult = SystemUser | PartnerUser | User

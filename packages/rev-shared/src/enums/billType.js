@@ -1,0 +1,3 @@
+export const BILL_WITHDRAW = 'BILL_WITHDRAW';
+export const BILL_DEPOSIT = 'BILL_DEPOSIT';
+export const BILL_TRANSFER = 'BILL_TRANSFER';

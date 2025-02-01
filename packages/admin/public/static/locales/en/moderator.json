@@ -1,0 +1,36 @@
+{
+  "manage": {},
+  "add_new": {
+    "add_button": "Add",
+    "reset_button": "Reset",
+    "add_success_message": "Add new moderator successfully",
+    "title": "Add New Moderator",
+    "username": "Username",
+    "username_placeholder": "Username",
+    "password": "Password",
+    "password_placeholder": "Password",
+    "email": "Email",
+    "email_placeholder": "Email",
+    "select_title": "Select Title",
+    "first_name": "First Name",
+    "first_name_placeholder": "First Name",
+    "last_name": "Last Name",
+    "last_name_placeholder": "Last Name",
+    "birth_date": "Birth Date"
+  },
+  "detail": {
+    "moderator_details": {
+      "title": "Moderator Details",
+      "label": {
+        "username": "Username",
+        "fullname": "Fullname",
+        "gender": "Gender",
+        "email": "Email",
+        "join_date": "Join Date",
+        "birth_date": "Birth Date",
+        "age": "Age",
+        "status": "Status"
+      }
+    }
+  }
+}

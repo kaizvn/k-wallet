@@ -1,0 +1,100 @@
+{
+  "transactions": {
+    "button": {
+      "back": "Back"
+    },
+    "placeholder_search": "Search by name of senders or recipients"
+  },
+  "payments": {
+    "button": {
+      "back": "Back"
+    },
+    "placeholder_search": "Search by hash"
+  },
+  "bills": {
+    "button": {
+      "back": "Back"
+    },
+    "placeholder_search": "Search by owner name or address"
+  },
+  "change_password": {
+    "button": {
+      "back": "Back",
+      "change_password": "Change Your Password"
+    },
+    "title": "Change your password",
+    "label": {
+      "current_password": "Current password",
+      "new_password": "New password",
+      "re_new_password": "Re-type new password"
+    }
+  },
+  "profile": {
+    "button": {
+      "back": "Back"
+    },
+    "information": {
+      "title": "Your Information",
+      "label": {
+        "yourname": "Your Name",
+        "email": "Email",
+        "two_step_verifycation": "2-Step Verifycation"
+      },
+      "button": {
+        "save": "Save",
+        "reset": "Reset",
+        "change_password": "Change Password"
+      },
+      "placeholder": {
+        "firstname": "First name",
+        "lastname": "Last name"
+      }
+    }
+  },
+  "wallets": {
+    "button": {
+      "back": "Back"
+    }
+  },
+  "transaction_detail": {
+    "transaction_detail": {
+      "title": "Your Transaction Detail"
+    },
+    "billing_detail": {
+      "title": "Your Billing Detail"
+    },
+    "button": {
+      "back": "Back"
+    }
+  },
+  "setting": {
+    "title": "Setting",
+    "button": {
+      "back": "Back",
+      "save": "Save"
+    },
+    "label": {
+      "language": "Language"
+    },
+    "message": {
+      "save_success": "Save successfully"
+    }
+  },
+  "two_factor_authen": {
+    "title": "2-Step Verifycation",
+    "label": {
+      "username": "Username",
+      "password": "Password"
+    },
+    "button": {
+      "cancel": "Cancel",
+      "confirm": "Confirm"
+    },
+    "placeholder_authen_code": "Enter the authen code",
+    "title_setup_tfa": "Setup TFA",
+    "message": {
+      "scan_qr_code": "Scan the QR code to get auth code in Google Authenticator",
+      "auth_type": "Auth Type - Time Based"
+    }
+  }
+}
